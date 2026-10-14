@@ -16,25 +16,21 @@ export default function LoginPage() {
       body: JSON.stringify({ password }),
     });
     setBusy(false);
-    if (res.ok) window.location.href = "/";
+    if (res.ok) window.location.assign("/");
     else setError((await res.json()).error);
   };
 
   return (
-    <form onSubmit={submit} className="mx-auto mt-24 flex max-w-xs flex-col gap-3">
-      <h1 className="text-2xl font-semibold">Trade Desk</h1>
-      <input
-        type="password"
-        autoFocus
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        placeholder="Password"
-        className="rounded-lg border border-line bg-panel px-3 py-2.5"
-      />
+    <form onSubmit={submit} className="card mx-auto mt-16 flex max-w-sm flex-col gap-4 p-6">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src="/icon-192.png" alt="" className="h-12 w-12 rounded-xl" />
+      <div>
+        <h1 className="text-2xl font-bold tracking-tight">Trade Desk</h1>
+        <p className="text-sm text-muted">Enter your password to continue.</p>
+      </div>
+      <input type="password" autoFocus value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" className="field" />
       {error && <p className="text-sm text-loss">{error}</p>}
-      <button disabled={busy} className="rounded-lg bg-amber py-2.5 font-medium text-bg disabled:opacity-60">
-        Sign in
-      </button>
+      <button disabled={busy} className="btn-primary py-3">Sign in</button>
     </form>
   );
 }

@@ -1,4 +1,3 @@
-import { mkdirSync } from "node:fs";
 import { Pool } from "pg";
 
 const SCHEMA = `
@@ -53,25 +52,19 @@ type Runner = (text: string, params?: unknown[]) => Promise<{ rows: any[] }>;
 
 const g = globalThis as unknown as { __db?: Promise<Runner> };
 
+export const isConfigured = () => !!process.env.DATABASE_URL;
+
 async function connect(): Promise<Runner> {
-  let run: Runner;
-  if (process.env.DATABASE_URL) {
-    const pool = new Pool({
-      connectionString: process.env.DATABASE_URL,
-      ssl: process.env.DATABASE_URL.includes("localhost") ? undefined : { rejectUnauthorized: false },
-      max: 3,
-    });
-    run = (text, params) => pool.query(text, params as any[]);
-  } else {
-    const { PGlite } = await import("@electric-sql/pglite");
-    const dir = process.env.PGLITE_DIR || "./.data/pglite";
-    mkdirSync(dir, { recursive: true });
-    const lite = new PGlite(dir);
-    run = (text, params) => lite.query(text, params as any[]);
-    await (lite as any).exec(SCHEMA);
-    return run;
-  }
-  for (const stmt of SCHEMA.split(";").map((s) => s.trim()).filter(Boolean)) await run(stmt);
+  const url = process.env.DATABASE_URL;
+  if (!url) throw new Error("DATABASE_URL is not set. Add it to .env.local (see the setup screen).");
+  const local = /@(localhost|127\.0\.0\.1)[:/]/.test(url);
+  const pool = new Pool({
+    connectionString: url,
+    ssl: local || /sslmode=/.test(url) ? undefined : { rejectUnauthorized: false },
+    max: 3,
+  });
+  const run: Runner = (text, params) => pool.query(text, params as any[]);
+  await run(SCHEMA);
   return run;
 }
 

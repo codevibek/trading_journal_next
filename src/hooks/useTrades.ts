@@ -30,6 +30,20 @@ export function useTrades() {
     (t) => (strategy === "All" || t.strategy === strategy) && (outcome === "all" || t.outcome === outcome),
   );
 
+  const equity = useMemo(
+    () =>
+      [...trades]
+        .sort((a, b) => Date.parse(a.entryTime) - Date.parse(b.entryTime))
+        .reduce<{ time: string; r: number }[]>((acc, t) => {
+          acc.push({ time: t.entryTime, r: (acc.at(-1)?.r ?? 0) + rOf(t.outcome) });
+          return acc;
+        }, []),
+    [trades],
+  );
+
+  const monthStart = new Date(new Date().getFullYear(), new Date().getMonth(), 1).getTime();
+  const thisMonth = trades.filter((t) => Date.parse(t.entryTime) >= monthStart);
+
   const totalR = visible.reduce((sum, t) => sum + rOf(t.outcome), 0);
   const wins = visible.filter((t) => t.outcome === "win").length;
   const decided = visible.filter((t) => t.outcome !== "be").length;
@@ -41,6 +55,9 @@ export function useTrades() {
     reload,
     strategies,
     filters: { strategy, setStrategy, outcome, setOutcome },
+    all: trades,
+    equity,
+    thisMonth: { count: thisMonth.length, r: thisMonth.reduce((sum, t) => sum + rOf(t.outcome), 0) },
     stats: {
       count: visible.length,
       winRate: decided ? wins / decided : 0,

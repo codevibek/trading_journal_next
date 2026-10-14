@@ -1,34 +1,50 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #eef1f6;
+  --bg: #f5f7fb;
   --panel: #ffffff;
-  --raised: #f5f7fb;
-  --line: #d8dfea;
-  --text: #142033;
-  --muted: #5b6b85;
-  --amber: #c27c0e;
-  --amber-soft: #fdf1dc;
-  --win: #18805c;
-  --win-soft: #dff3ea;
-  --loss: #c8383d;
-  --loss-soft: #fbe4e4;
+  --raised: #f1f4f9;
+  --line: #e4e8f0;
+  --text: #0f172a;
+  --muted: #64748b;
+  --brand: #4f46e5;
+  --brand-soft: #eef0ff;
+  --brand-strong: #4f46e5;
+  --win: #16a34a;
+  --win-soft: #e8f7ee;
+  --loss: #e11d48;
+  --loss-soft: #fdecef;
+  --news: #ea580c;
+  --news-soft: #fff1e7;
+  --violet: #7c3aed;
+  --violet-soft: #f3eeff;
+  --sky: #0284c7;
+  --sky-soft: #e6f4fb;
+  --shadow: 0 1px 2px rgb(15 23 42 / 0.04), 0 6px 20px rgb(15 23 42 / 0.05);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0d1524;
-    --panel: #142037;
-    --raised: #1a2843;
-    --line: #26375a;
-    --text: #e6ecf5;
-    --muted: #8d9cb8;
-    --amber: #f5a524;
-    --amber-soft: #3a2d14;
-    --win: #3fb68b;
-    --win-soft: #143327;
-    --loss: #f06a6a;
-    --loss-soft: #3a1c22;
+    --bg: #0f1115;
+    --panel: #171a20;
+    --raised: #1f232b;
+    --line: #2a2f39;
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+    --brand: #818cf8;
+    --brand-soft: #23264a;
+    --brand-strong: #4f46e5;
+    --win: #4ade80;
+    --win-soft: #15291d;
+    --loss: #fb7185;
+    --loss-soft: #351a22;
+    --news: #fb923c;
+    --news-soft: #352315;
+    --violet: #a78bfa;
+    --violet-soft: #271f3d;
+    --sky: #38bdf8;
+    --sky-soft: #142a36;
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.3);
   }
 }
 
@@ -39,13 +55,59 @@
   --color-line: var(--line);
   --color-text: var(--text);
   --color-muted: var(--muted);
-  --color-amber: var(--amber);
-  --color-amber-soft: var(--amber-soft);
+  --color-brand: var(--brand);
+  --color-brand-soft: var(--brand-soft);
+  --color-brand-strong: var(--brand-strong);
   --color-win: var(--win);
   --color-win-soft: var(--win-soft);
   --color-loss: var(--loss);
   --color-loss-soft: var(--loss-soft);
-  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-news: var(--news);
+  --color-news-soft: var(--news-soft);
+  --color-violet: var(--violet);
+  --color-violet-soft: var(--violet-soft);
+  --color-sky: var(--sky);
+  --color-sky-soft: var(--sky-soft);
+  --font-sans: "Plus Jakarta Sans Variable", ui-sans-serif, system-ui, sans-serif;
+}
+
+@utility card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+@utility field {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  padding: 0.625rem 0.875rem;
+}
+
+@utility btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+  background: var(--brand-strong);
+  color: white;
+  font-weight: 600;
+  padding: 0.625rem 1rem;
+}
+
+@utility btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  font-weight: 500;
+  padding: 0.625rem 1rem;
 }
 
 body {
@@ -56,8 +118,12 @@ body {
 }
 
 :focus-visible {
-  outline: 2px solid var(--amber);
+  outline: 2px solid var(--brand);
   outline-offset: 2px;
+}
+
+button:disabled {
+  opacity: 0.55;
 }
 
 @media (prefers-reduced-motion: reduce) {

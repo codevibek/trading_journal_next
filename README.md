@@ -4,16 +4,21 @@ Morning news briefing, BTC trade journal, and win-rate insights in one Next.js a
 
 ## Run it locally
 
+1. Create a free Postgres database at [neon.tech](https://neon.tech). On the project dashboard choose **Connect** and copy the `postgresql://…` string.
+2. Create `.env.local` in this folder containing `DATABASE_URL=<that string>`.
+3. Run:
+
 ```bash
 npm install
 npm run dev
 ```
 
-Open http://localhost:3000. With no `DATABASE_URL`, data is stored in `./.data` on your machine, so there's nothing else to install.
+Open http://localhost:3000. Tables are created automatically. If the database isn't set up, the app shows these steps instead of an error. Using the same database locally and when deployed means your phone and laptop see the same journal.
 
 ## Screens
 
-- **Briefing**: fetches crypto and market RSS feeds, scores each headline for impact and sentiment, and reads the top stories aloud. Every headline is saved with its timestamp, which builds the news history the Insights screen uses.
+- **Home**: the morning briefing player, win rate, total result, this month, an equity curve, recent trades and top headlines.
+- **News**: fetches crypto and market RSS feeds, scores each headline for impact and sentiment, and reads the top stories aloud. Every headline is saved with its timestamp, which builds the news history the Insights screen uses.
 - **Journal**: log trades with direction, result, entry and exit prices, notes and a chart screenshot. Each trade shows the market at entry and the news from the 3 hours before.
 - **Import**: upload the Notion export (.zip with screenshots, or just the .csv). You match columns, pick the timezone the dates were logged in, check the rows, then import. Re-importing the same file skips trades that are already in the journal.
 - **Insights**: pulls BTCUSDT 15m, 1h and 4h candles from Binance for every trade. Indicators come only from candles that closed before entry. Win rates are grouped by session, trend, RSI, volatility, volume, signal candle, news and day, and each one is compared with the 33.3% breakeven for 1:2 risk to reward. **Download data for Python** exports everything as a CSV for notebooks or ML.
@@ -23,8 +28,8 @@ Open http://localhost:3000. With no `DATABASE_URL`, data is stored in `./.data` 
 ```
 src/
   app/            pages and API routes (app/api/*)
-  hooks/          one hook per feature: useNews, useBriefing, useTrades, useTrade, useCsvImport, useInsights
-  components/     Nav, TradeForm, RBadge
+  hooks/          one hook per feature: useNews, useBriefing, useTrades, useTrade, useCsvImport, useInsights, useSetup
+  components/     Nav, BriefingCard, TradeForm, TradeList, NewsList, ui (cards, pills), charts/
   lib/            db, news + impact scoring, briefing + TTS, trades, dates, candles/indicators/features
 ```
 
@@ -33,7 +38,7 @@ Risk settings live in `src/lib/trading.ts`: `RISK_USD = 200` and `REWARD_R = 2`.
 ## Deploy (Vercel + Neon, both have free tiers)
 
 1. Push this folder to a GitHub repo.
-2. Create a Postgres database on neon.tech and copy its connection string.
+2. Use the same Neon connection string (or create a separate database for production).
 3. On vercel.com, import the repo and add these environment variables:
    - `DATABASE_URL`: the Neon connection string
    - `APP_PASSWORD`: the password you'll sign in with

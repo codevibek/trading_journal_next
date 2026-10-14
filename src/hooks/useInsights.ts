@@ -153,6 +153,14 @@ export function useInsights() {
 
   const overall = summarise("All", scoped);
 
+  const highlights = useMemo(() => {
+    const all = dimensions.flatMap((d) => d.buckets.filter((b) => b.verdict !== "few").map((b) => ({ ...b, dimension: d.title })));
+    return {
+      best: [...all].filter((b) => b.expR > 0).sort((a, b) => b.expR - a.expR).slice(0, 3),
+      worst: [...all].filter((b) => b.expR < 0).sort((a, b) => a.expR - b.expR).slice(0, 3),
+    };
+  }, [dimensions]);
+
   return {
     loading,
     error,
@@ -166,5 +174,6 @@ export function useInsights() {
     offCandle: scoped.filter((t) => hasFeatures(t) && !t.features!.entryInRange).length,
     analysed: scoped.filter(hasFeatures).length,
     dimensions,
+    highlights,
   };
 }
