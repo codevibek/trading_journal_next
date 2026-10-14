@@ -1,4 +1,4 @@
-import { insertTrade, listTrades, validate } from "@/lib/trades";
+import {deleteAllTrades, insertTrade, listTrades, validate } from "@/lib/trades";
 
 export async function GET() {
   return Response.json({ trades: await listTrades() });
@@ -10,4 +10,10 @@ export async function POST(request: Request) {
   const id = await insertTrade(value);
   if (!id) return Response.json({ error: "A trade with this time, strategy and entry price already exists." }, { status: 409 });
   return Response.json({ id });
+}
+export async function DELETE(request: Request) {
+  if (new URL(request.url).searchParams.get("confirm") !== "all") {
+    return Response.json({ error: "Add ?confirm=all to delete every trade." }, { status: 400 });
+  }
+  return Response.json({ deleted: await deleteAllTrades() });
 }

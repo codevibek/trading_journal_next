@@ -1,0 +1,438 @@
+﻿Strategy,Trade Name,ratio,Trade Type,PnL,Trade Date,Crypto Pair,Entry Price,Exit Price,Position Size,Image,Formula,Text,Entry Price Source
+strategy+ avoid Ema line + liquidity lines,-Clear momentum,,Long,Profit,"January 1, 2025 20:15 (GMT+11)",BTC/USDT,96091,96491,,BTCUSD_2025-07-07_10-25-24_5297a.png,20:15,,logged
+,,,,,,,,,,,,,
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma ,,Long,Profit,"January 2, 2025 7:00 (GMT+11)",BTC/USDT,94186,94586,200,BTCUSD_2025-07-07_09-48-10_355df.png,07:00,,logged
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma second one,,Long,Profit,"January 2, 2025 7:15 (GMT+11)",BTC/USDT,94418,94618,,BTCUSD_2025-07-07_09-55-13_cc696.png,07:15,,logged
+strategy+ avoid Ema line + liquidity lines,- tried to ride the big momentum -bit of chaotic consolidation,,Long,loss,"January 3, 2025 7:15 (GMT+11)",BTC/USDT,97504,97304,,,07:15,,logged
+strategy+ avoid Ema line + liquidity lines,-Clear momentum,,Long,Profit,"January 4, 2025 5:30 (GMT+11)",BTC/USDT,98402,98802,,,05:30,,logged
+strategy+ avoid Ema line + liquidity lines,-Clear momentum,,Long,Profit,"January 4, 2025 5:45 (GMT+11)",BTC/USDT,98375,98775,,,05:45,,logged
+strategy+ avoid Ema line + liquidity lines,-Clear momentum,,Long,Profit,"January 4, 2025 6:00 (GMT+11)",BTC/USDT,98491,98891,,,06:00,,logged
+strategy+ avoid Ema line + liquidity lines,-Clear momentum,,Long,loss,"January 4, 2025 6:15 (GMT+11)",BTC/USDT,98880,98680,,,06:15,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again,,Long,Profit,"January 4, 2025 18:30 (GMT+11)",BTC/USDT,98187,98487,,BTCUSD_2025-07-07_11-02-16_697d5.png,18:30,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again,,Long,Profit,"January 4, 2025 18:45 (GMT+11)",BTC/USDT,98104,98404,,BTCUSD_2025-07-07_11-02-16_697d5%201.png,18:45,,logged
+strategy+ avoid Ema line + liquidity lines,-there was some resistance at price level,,Long,loss,"January 5, 2025 9:45 (GMT+11)",BTC/USDT,98394,98194,,BTCUSD_2025-07-07_11-11-32_8d4d5.png,09:45,,logged
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"January 6, 2025 9:45 (GMT+11)",BTC/USDT,98623,99023,,BTCUSD_2025-07-07_11-16-04_72d37.png,09:45,,logged
+,-went down but showed momentum again,,Long,Profit,"January 6, 2025 13:00 (GMT+11)",BTC/USDT,98711,99111,,BTCUSD_2025-07-07_11-29-46_eec44.png,13:00,,logged
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"January 6, 2025 13:15 (GMT+11)",BTC/USDT,99028.95,,,BTCUSD_2025-07-07_11-29-20_00c94.png,13:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-just indicator,,Long,Profit,"January 6, 2025 14:30 (GMT+11)",BTC/USDT,99065,99465,,BTCUSD_2025-07-07_11-32-25_de98a.png,14:30,,logged
+strategy+ avoid Ema line + liquidity lines,-just indicator,,Long,Profit,"January 6, 2025 14:45 (GMT+11)",BTC/USDT,99083,99483,,BTCUSD_2025-07-07_11-32-25_de98a%201.png,14:45,,logged
+strategy+ avoid Ema line + liquidity lines,--went down but showed momentum again,,Long,loss,"January 6, 2025 23:30 (GMT+11)",BTC/USDT,99572.49,,,,23:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-sed,,Long,loss,"January 7, 2025 2:15 (GMT+11)",BTC/USDT,100783,100763,,BTCUSD_2025-07-07_12-04-21_2acf4.png,02:15,,logged
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma -almost sed,,Short,Profit,"January 8, 2025 2:15 (GMT+11)",BTC/USDT,98507,98107,,,02:15,,logged
+strategy+ avoid Ema line + liquidity lines,-Clear momentum,,Short,Profit,"January 8, 2025 4:15 (GMT+11)",BTC/USDT,97355,96955,,BTCUSD_2025-07-07_12-38-23_05519.png,04:15,,logged
+strategy+ avoid Ema line + liquidity lines,-just indicator,,Short,Profit,"January 8, 2025 6:30 (GMT+11)",BTC/USDT,96812,96412,,BTCUSD_2025-07-07_12-45-08_0478b.png,06:30,,logged
+strategy+ avoid Ema line + liquidity lines,-just indicator,,Short,Profit,"January 8, 2025 6:45 (GMT+11)",BTC/USDT,96660,96260,,BTCUSD_2025-07-07_12-51-10_b285b.png,06:45,,logged
+strategy+ avoid Ema line + liquidity lines,-there was some resistance at price level,,Short,loss,"January 8, 2025 7:45 (GMT+11)",BTC/USDT,96174,96374,,BTCUSD_2025-07-07_12-54-45_9b7e3.png,07:45,,logged
+strategy+ avoid Ema line + liquidity lines,-just faked out,,Short,loss,"January 8, 2025 22:45 (GMT+11)",BTC/USDT,94741,94541,,BTCUSD_2025-07-07_13-07-43_8ea7a.png,22:45,,logged
+strategy+ avoid Ema line + liquidity lines,-just faked out,,Short,loss,"January 9, 2025 4:30 (GMT+11)",BTC/USDT,92932,93132,,BTCUSD_2025-07-07_13-07-43_8ea7a%201.png,04:30,,logged
+strategy+ avoid Ema line + liquidity lines,-sed,,Short,loss,"January 9, 2025 16:15 (GMT+11)",BTC/USDT,94283,94483,,BTCUSD_2025-07-07_13-09-35_92f84.png,16:15,,logged
+strategy+ avoid Ema line + liquidity lines,-just indicator -clear momentum,,Short,Profit,"January 9, 2025 18:45 (GMT+11)",BTC/USDT,93669,93269,,BTCUSD_2025-07-07_13-23-54_8a697.png,18:45,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again,4,Short,Profit,"January 10, 2025 0:30 (GMT+11)",BTC/USDT,92803,92003,,BTCUSD_2025-07-07_13-27-37_43581.png,00:30,,logged
+strategy+ avoid Ema line + liquidity lines,-Clear momentum,,Short,Profit,"January 10, 2025 0:45 (GMT+11)",BTC/USDT,92344,91944,,,00:45,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again,4,Short,Profit,"January 10, 2025 4:45 (GMT+11)",BTC/USDT,93436,92636,,BTCUSD_2025-07-07_13-38-37_9b049.png,04:45,,logged
+strategy+ avoid Ema line + liquidity lines,-sed,,Short,loss,"January 10, 2025 5:00 (GMT+11)",BTC/USDT,92752,92552,,BTCUSD_2025-07-07_13-40-51_39a8d.png,05:00,,logged
+strategy+ avoid Ema line + liquidity lines,-sed,,Short,loss,"January 10, 2025 7:00 (GMT+11)",BTC/USDT,91916,92116,,BTCUSD_2025-07-07_13-42-00_fee70.png,07:00,,logged
+strategy+ avoid Ema line + liquidity lines,-sed,,Short,loss,"January 11, 2025 8:00 (GMT+11)",BTC/USDT,94722,94922,,BTCUSD_2025-07-07_13-46-55_6ba92.png,08:00,,logged
+strategy+ avoid Ema line + liquidity lines,-sed ,,Short,loss,"January 11, 2025 9:00 (GMT+11)",BTC/USDT,94722,94922,,BTCUSD_2025-07-07_13-46-55_6ba92.png,09:00,,logged
+strategy+ avoid Ema line + liquidity lines,-sed,,Short,loss,"January 11, 2025 9:45 (GMT+11)",BTC/USDT,94722,94922,,BTCUSD_2025-07-07_13-46-55_6ba92.png,09:45,,logged
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"January 11, 2025 13:00 (GMT+11)",BTC/USDT,94410,94000,,BTCUSD_2025-07-07_14-21-16_c8f13.png,13:00,,logged
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"January 11, 2025 14:30 (GMT+11)",BTC/USDT,94219,94419,,BTCUSD_2025-07-07_14-22-25_f904c.png,14:30,,logged
+strategy+ avoid Ema line + liquidity lines,-there was some resistance at price level,,Short,loss,"January 12, 2025 20:30 (GMT+11)",BTC/USDT,93867,94067,,BTCUSD_2025-07-07_19-36-47_389ef.png,20:30,,logged
+strategy+ avoid Ema line + liquidity lines,-there was some resistance at price level,,Short,loss,"January 12, 2025 20:45 (GMT+11)",BTC/USDT,93926,94126,,BTCUSD_2025-07-07_19-36-47_389ef%201.png,20:45,,logged
+strategy+ avoid Ema line + liquidity lines,-there was some resistance at price level,,Short,loss,"January 12, 2025 21:50 (GMT+11)",BTC/USDT,93961,94161,,BTCUSD_2025-07-07_19-36-47_389ef%202.png,21:50,,logged
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma -almost sed,4,Short,Profit,"January 13, 2025 6:30 (GMT+11)",BTC/USDT,94745,93945,,BTCUSD_2025-07-07_20-00-58_a1b76.png,06:30,,logged
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma -almost sed,4,Short,Profit,"January 13, 2025 7:45 (GMT+11)",BTC/USDT,94650,93850,,BTCUSD_2025-07-07_20-00-58_a1b76%201.png,07:45,,logged
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma -almost sed,,Short,Profit,"January 13, 2025 16:00 (GMT+11)",BTC/USDT,94440,94040,,BTCUSD_2025-07-07_20-12-34_d49d7.png,16:00,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,loss,"January 13, 2025 18:00 (GMT+11)",BTC/USDT,93612,93812,,BTCUSD_2025-07-07_20-12-34_d49d7%201.png,18:00,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,Profit,"January 13, 2025 19:15 (GMT+11)",BTC/USDT,93391,92991,,BTCUSD_2025-07-07_20-12-34_d49d7%202.png,19:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,Profit,"January 13, 2025 19:30 (GMT+11)",BTC/USDT,93184,92790,,BTCUSD_2025-07-07_21-00-18_c5a47.png,19:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,4,Short,Profit,"January 13, 2025 20:15 (GMT+11)",BTC/USDT,92920,92120,,BTCUSD_2025-07-07_21-07-53_7981b.png,20:15,,logged
+strategy+ avoid Ema line + liquidity lines,-just faked out,,Short,loss,"January 13, 2025 20:30 (GMT+11)",BTC/USDT,92755,92955,,,20:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,Profit,"January 13, 2025 22:45 (GMT+11)",BTC/USDT,91083,90683,,BTCUSD_2025-07-07_21-19-33_fa202.png,22:45,,logged
+strategy+ avoid Ema line + liquidity lines,"-gradual momentum almost consolidation, immediately after crossing sma",,Long,loss,"January 14, 2025 16:15 (GMT+11)",BTC/USDT,95425,95225,,BTCUSD_2025-07-08_11-09-16_247e0.png,16:15,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again,,Long,Profit,"January 14, 2025 17:30 (GMT+11)",BTC/USDT,96557,96957,,BTCUSD_2025-07-08_11-12-20_65a26.png,17:30,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again,,Long,loss,"January 15, 2025 6:15 (GMT+11)",BTC/USDT,96814,96614,,BTCUSD_2025-07-08_11-14-54_639fb.png,06:15,,logged
+strategy+ avoid Ema line + liquidity lines,-sed,,Long,loss,"January 15, 2025 11:30 (GMT+11)",BTC/USDT,97094,97894,,,11:30,,logged
+strategy+ avoid Ema line + liquidity lines,-consolidation and momentum,,Long,Profit,"January 16, 2025 0:45 (GMT+11)",BTC/USDT,98521,98721,,BTCUSD_2025-07-08_11-20-00_2cba0.png,00:45,,logged
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"January 16, 2025 11:30 (GMT+11)",BTC/USDT,100390,100190,,,11:30,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again,,Long,loss,"January 17, 2025 3:15 (GMT+11)",BTC/USDT,99396,99196,,,03:15,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again,,Long,Profit,"January 17, 2025 4:30 (GMT+11)",BTC/USDT,99856,100256,,BTCUSD_2025-07-08_11-28-02_5c877.png,04:30,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again,,Long,Profit,"January 17, 2025 6:45 (GMT+11)",BTC/USDT,100017,100417,,BTCUSD_2025-07-08_11-42-55_dff8e.png,06:45,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again -faked out,,Long,loss,"January 17, 2025 7:00 (GMT+11)",BTC/USDT,100389,100189,,,07:00,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again -faked out,,Long,loss,"January 17, 2025 21:15 (GMT+11)",BTC/USDT,102107,101907,,,21:15,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again -faked out,,Long,Profit,"January 17, 2025 21:15 (GMT+11)",BTC/USDT,101999,102400,,BTCUSD_2025-07-08_11-54-03_351bd.png,21:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,Profit,"January 17, 2025 23:15 (GMT+11)",BTC/USDT,102510,102910,,BTCUSD_2025-07-08_12-02-29_62fdf.png,23:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,Profit,"January 17, 2025 23:30 (GMT+11)",BTC/USDT,102522,102922,,BTCUSD_2025-07-08_12-02-29_62fdf%201.png,23:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,4,Long,Profit,"January 18, 2025 1:45 (GMT+11)",BTC/USDT,103356,104056,,BTCUSD_2025-07-09_09-15-45_03cd6.png,01:45,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,Profit,"January 18, 2025 3:15 (GMT+11)",BTC/USDT,104652,105052,,BTCUSD_2025-07-09_09-15-25_0ebf5.png,03:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,Profit,"January 18, 2025 3:30 (GMT+11)",BTC/USDT,104859,105259,,BTCUSD_2025-07-09_09-15-02_e3cef.png,03:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,4,Long,Profit,"January 18, 2025 5:45 (GMT+11)",BTC/USDT,105181,105481,,BTCUSD_2025-07-09_09-14-24_9f686.png,05:45,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,loss,"January 18, 2025 6:45 (GMT+11)",BTC/USDT,105463,105263,,BTCUSD_2025-07-09_09-20-47_8ea1e.png,06:45,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,loss,"January 18, 2025 6:45 (GMT+11)",BTC/USDT,105720,105520,,BTCUSD_2025-07-09_09-20-47_8ea1e%201.png,06:45,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,loss,"January 19, 2025 15:00 (GMT+11)",BTC/USDT,104856,104656,,BTCUSD_2025-07-09_09-26-50_ce2c3.png,15:00,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum -sed,,Long,loss,"January 20, 2025 7:00 (GMT+11)",BTC/USDT,105962,105762,,BTCUSD_2025-07-09_09-29-16_56a2c.png,07:00,,logged
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma ,14,Long,Profit,"January 20, 2025 17:45 (GMT+11)",BTC/USDT,104537,107137,,BTCUSD_2025-07-09_09-43-29_9feac.png,17:45,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,8,Long,Profit,"January 20, 2025 18:00 (GMT+11)",BTC/USDT,107218,10900,,BTCUSD_2025-07-09_09-47-55_0d9e4.png,18:00,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again -faked out,,Long,loss,"January 20, 2025 20:00 (GMT+11)",BTC/USDT,108320.00,,,,20:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,loss,"January 22, 2025 0:15 (GMT+11)",BTC/USDT,104542,104342,,BTCUSD_2025-07-09_10-54-27_80c99.png,00:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,Profit,"January 22, 2025 1:15 (GMT+11)",BTC/USDT,104424,104824,,BTCUSD_2025-07-09_10-55-54_52323.png,01:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,loss,"January 22, 2025 1:30 (GMT+11)",BTC/USDT,105154,104954,,BTCUSD_2025-07-09_10-58-01_de4b6.png,01:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,loss,"January 22, 2025 5:00 (GMT+11)",BTC/USDT,106176,105976,,BTCUSD_2025-07-09_11-04-34_0c650.png,05:00,,logged
+strategy+ avoid Ema line + liquidity lines,-just indicator,,Short,Profit,"January 23, 2025 13:00 (GMT+11)",BTC/USDT,102882,102422,,BTCUSD_2025-07-09_11-12-52_af266.png,13:00,,logged
+strategy+ avoid Ema line + liquidity lines,-just indicator,,Short,Profit,"January 23, 2025 13:15 (GMT+11)",BTC/USDT,102451,102051,,BTCUSD_2025-07-09_11-15-29_bf6a3.png,13:15,,logged
+strategy+ avoid Ema line + liquidity lines,-just indicator,,Short,Profit,"January 23, 2025 15:00 (GMT+11)",BTC/USDT,102409,102009,,BTCUSD_2025-07-09_11-18-13_29630.png,15:00,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum -just faked out,,Short,loss,"January 23, 2025 16:30 (GMT+11)",BTC/USDT,101971,102171,,BTCUSD_2025-07-09_11-27-07_e96a1.png,16:30,,logged
+strategy+ avoid Ema line + liquidity lines,-consolidation and momentum,,Short,loss,"January 23, 2025 21:00 (GMT+11)",BTC/USDT,101739,101939,,BTCUSD_2025-07-09_11-29-13_e8937.png,21:00,,logged
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"January 24, 2025 0:30 (GMT+11)",BTC/USDT,101523.19,,,,00:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma ,,Long,Profit,"January 24, 2025 1:45 (GMT+11)",BTC/USDT,104926,105726,,BTCUSD_2025-07-09_11-38-33_57f4f.png,01:45,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,loss,"January 24, 2025 3:15 (GMT+11)",BTC/USDT,106523,106323,,BTCUSD_2025-07-09_11-46-36_9335e.png,03:15,,logged
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma  -just faked out,,Long,loss,"January 24, 2025 7:15 (GMT+11)",BTC/USDT,104835,104635,,BTCUSD_2025-07-09_11-48-32_f9980.png,07:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,loss,"January 24, 2025 7:30 (GMT+11)",BTC/USDT,104893,104693,,BTCUSD_2025-07-09_12-11-13_54ad1.png,07:30,,logged
+strategy+ avoid Ema line + liquidity lines,-consolidation and momentum,,Long,loss,"January 25, 2025 1:45 (GMT+11)",BTC/USDT,106210,106010,,BTCUSD_2025-07-09_12-16-07_7eaa9.png,01:45,,logged
+strategy+ avoid Ema line + liquidity lines,--clear momentum,,Long,Profit,"January 25, 2025 5:15 (GMT+11)",BTC/USDT,106714,107114,,BTCUSD_2025-07-09_12-21-21_3f924.png,05:15,,logged
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma  -just faked out - slow momentum,,Long,loss,"January 26, 2025 0:00 (GMT+11)",BTC/USDT,104714,104514,,BTCUSD_2025-07-09_12-27-09_1bd34.png,00:00,,logged
+strategy+ avoid Ema line + liquidity lines,--Immediately after crossing sma ,,Short,Profit,"January 27, 2025 10:15 (GMT+11)",BTC/USDT,103305,102905,,BTCUSD_2025-07-09_12-32-50_a1601.png,10:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum -sed,,Short,loss,"January 27, 2025 12:00 (GMT+11)",BTC/USDT,101748,101948,,BTCUSD_2025-07-09_12-36-17_1476d.png,12:00,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,loss,"January 27, 2025 14:00 (GMT+11)",BTC/USDT,101000,101200,,BTCUSD_2025-07-09_12-42-53_aedc9.png,14:00,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,Profit,"January 27, 2025 15:30 (GMT+11)",BTC/USDT,100891,100491,,BTCUSD_2025-07-09_12-45-03_84e18.png,15:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,Profit,"January 27, 2025 16:45 (GMT+11)",BTC/USDT,100254,99824,,BTCUSD_2025-07-09_13-25-42_11b38.png,16:45,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum -sed,,Short,loss,"January 27, 2025 17:45 (GMT+11)",BTC/USDT,99054,99254,,BTCUSD_2025-07-09_13-27-24_ce46f.png,17:45,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum -sed,,Short,loss,"January 27, 2025 18:00 (GMT+11)",BTC/USDT,98915,99015,,BTCUSD_2025-07-09_13-29-57_063d5.png,18:00,,logged
+strategy+ avoid Ema line + liquidity lines,-consolidation and momentum,,Short,loss,"January 27, 2025 22:00 (GMT+11)",BTC/USDT,98628,98828,,BTCUSD_2025-07-09_13-39-50_605b0.png,22:00,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again ,6,Short,Profit,"January 28, 2025 3:30 (GMT+11)",BTC/USDT,100811,99411,,BTCUSD_2025-07-09_13-47-11_878bb.png,03:30,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again -faked out -sed,,Short,loss,"January 28, 2025 3:45 (GMT+11)",BTC/USDT,99548,99748,,BTCUSD_2025-07-09_13-51-09_b0e2c.png,03:45,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again -faked out -sed,,Short,loss,"January 28, 2025 4:30 (GMT+11)",BTC/USDT,99548,99748,,BTCUSD_2025-07-09_13-51-09_b0e2c%201.png,04:30,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again -faked out -sed,,Short,loss,"January 28, 2025 6:00 (GMT+11)",BTC/USDT,99180.00,,,,06:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-sed,,Short,loss,"January 29, 2025 8:00 (GMT+11)",BTC/USDT,101214,101414,,BTCUSD_2025-07-09_14-01-56_0d64e.png,08:00,,logged
+strategy+ avoid Ema line + liquidity lines,-too close to line  -slow momentum,,Long,loss,"January 29, 2025 20:30 (GMT+11)",BTC/USDT,102766,102566,,BTCUSD_2025-07-09_14-22-18_41d52.png,20:30,,logged
+strategy+ avoid Ema line + liquidity lines,-too close to line  -slow momentum,,Short,loss,"January 29, 2025 21:15 (GMT+11)",BTC/USDT,102482,102682,,BTCUSD_2025-07-09_14-22-18_41d52%201.png,21:15,,logged
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma ,,Short,Profit,"January 29, 2025 23:45 (GMT+11)",BTC/USDT,102307,102707,,BTCUSD_2025-07-09_14-21-49_36f78.png,23:45,,logged
+strategy+ avoid Ema line + liquidity lines,-no idea what hjapperned — too much chaotic candles,,Long,loss,"January 30, 2025 7:30 (GMT+11)",BTC/USDT,104266,104066,,BTCUSD_2025-07-09_14-26-15_d434e.png,07:30,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again,,Long,loss,"January 30, 2025 12:30 (GMT+11)",BTC/USDT,104370,104170,,BTCUSD_2025-07-09_14-35-46_ad633.png,12:30,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again,,Long,Profit,"January 30, 2025 13:15 (GMT+11)",BTC/USDT,104137,104537,,BTCUSD_2025-07-09_14-37-47_74804.png,13:15,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again,,Long,Profit,"January 30, 2025 13:15 (GMT+11)",BTC/USDT,104361,104760,,BTCUSD_2025-07-09_14-37-47_74804%201.png,13:15,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again,,Long,Profit,"January 30, 2025 13:45 (GMT+11)",BTC/USDT,104441,104841,,BTCUSD_2025-07-09_14-43-08_ea677.png,13:45,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again,,Long,Profit,"January 30, 2025 14:45 (GMT+11)",BTC/USDT,104905,105305,,BTCUSD_2025-07-09_14-42-57_62c93.png,14:45,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,loss,"January 30, 2025 18:00 (GMT+11)",BTC/USDT,105190,104990,,BTCUSD_2025-07-09_14-54-34_6308c.png,18:00,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,loss,"January 30, 2025 18:15 (GMT+11)",BTC/USDT,105539,105339,,BTCUSD_2025-07-09_14-54-34_6308c%201.png,18:15,,logged
+strategy+ avoid Ema line + liquidity lines,-consolidation and momentum,,Long,Profit,"January 31, 2025 2:00 (GMT+11)",BTC/USDT,105925,106425,,BTCUSD_2025-07-09_14-57-26_58266.png,02:00,,logged
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma ,,Long,loss,"June 2, 2025 18:30 (GMT+10)",BTC/USDT,105890,105690,,BTCUSD_2025-07-10_10-59-40_b5c3d.png,18:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,Profit,"June 2, 2025 20:30 (GMT+10)",BTC/USDT,104438,104238,,BTCUSD_2025-07-10_11-24-15_15599.png,20:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,loss,"June 3, 2025 10:15 (GMT+10)",BTC/USDT,106211,106011,,BTCUSD_2025-07-10_12-07-51_7f9b8.png,10:15,,logged
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma ,,Short,loss,"June 3, 2025 18:30 (GMT+10)",BTC/USDT,104980,105180,,BTCUSD_2025-07-10_12-20-55_1a2a8.png,18:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum -Immediately after crossing sma ,,Long,Profit,"June 4, 2025 0:30 (GMT+10)",BTC/USDT,106423,106823,,BTCUSD_2025-07-10_12-28-04_73f76.png,00:30,,logged
+strategy+ avoid Ema line + liquidity lines,--went down but showed momentum again,,Long,loss,"June 4, 2025 5:30 (GMT+10)",BTC/USDT,106409,106209,,BTCUSD_2025-07-10_12-31-04_c3ee8.png,05:30,,logged
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma ,,Long,loss,"June 4, 2025 8:15 (GMT+10)",BTC/USDT,105786,105586,,BTCUSD_2025-07-10_12-34-48_bf220.png,08:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,Profit,"June 5, 2025 0:00 (GMT+10)",BTC/USDT,104781,104381,,BTCUSD_2025-07-10_12-42-52_3e2ba.png,00:00,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,loss,"June 5, 2025 0:15 (GMT+10)",BTC/USDT,104503,104703,,BTCUSD_2025-07-10_12-44-44_376ef.png,00:15,,logged
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma ,,Short,Profit,"June 5, 2025 4:00 (GMT+10)",BTC/USDT,105183,104873,,BTCUSD_2025-07-10_12-53-47_e6e6e.png,04:00,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,Profit,"June 5, 2025 4:45 (GMT+10)",BTC/USDT,105169,104769,,BTCUSD_2025-07-10_12-53-47_e6e6e%201.png,04:45,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,loss,"June 5, 2025 15:45 (GMT+10)",BTC/USDT,104786,104986,,BTCUSD_2025-07-10_12-58-49_56d14.png,15:45,,logged
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma ,,Short,Profit,"June 6, 2025 0:00 (GMT+10)",BTC/USDT,104555,104155,,BTCUSD_2025-07-10_13-04-11_903f0.png,00:00,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,Profit,"June 6, 2025 2:15 (GMT+10)",BTC/USDT,104424,104024,,BTCUSD_2025-07-10_13-06-00_a3220.png,02:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,loss,"June 6, 2025 3:00 (GMT+10)",BTC/USDT,103291,102891,,BTCUSD_2025-07-10_13-19-23_ea5dd.png,03:00,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,loss,"June 6, 2025 4:15 (GMT+10)",BTC/USDT,102734,102434,,BTCUSD_2025-07-10_13-24-12_14b28.png,04:15,,logged
+strategy+ avoid Ema line + liquidity lines,-sed,,Short,loss,"June 6, 2025 5:30 (GMT+10)",BTC/USDT,102234,102434,,BTCUSD_2025-07-10_13-26-03_130fb.png,05:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,Profit,"June 6, 2025 6:15 (GMT+10)",BTC/USDT,101604,101204,,BTCUSD_2025-07-10_13-27-30_5eaa7.png,06:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,Profit,"June 6, 2025 6:30 (GMT+10)",BTC/USDT,101464,101064,,BTCUSD_2025-07-10_13-28-54_e3c6f.png,06:30,,logged
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma ,,Long,Profit,"June 7, 2025 1:00 (GMT+10)",BTC/USDT,104884,105284,,BTCUSD_2025-07-10_13-45-21_241fe.png,01:00,,logged
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma ,,Long,Profit,"June 7, 2025 13:15 (GMT+10)",BTC/USDT,104804,105205,,BTCUSD_2025-07-10_13-50-14_c3278.png,13:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum - consolidation and slow momentum,,Long,Profit,"June 7, 2025 21:15 (GMT+10)",BTC/USDT,105209,105609,,BTCUSD_2025-07-10_13-54-47_00819.png,21:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum - consolidation and slow momentum,,Long,Profit,"June 7, 2025 22:15 (GMT+10)",BTC/USDT,105323,105723,,BTCUSD_2025-07-10_13-57-17_c5c52.png,22:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,Profit,"June 9, 2025 1:15 (GMT+10)",BTC/USDT,106054,106454,,BTCUSD_2025-07-10_14-02-53_15d45.png,01:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,loss,"June 9, 2025 2:15 (GMT+10)",BTC/USDT,106130,106530,,BTCUSD_2025-07-10_14-07-31_01163.png,02:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,Profit,"June 9, 2025 16:45 (GMT+10)",BTC/USDT,106656,107056,,BTCUSD_2025-07-10_14-09-46_e9aba.png,16:45,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,Profit,"June 9, 2025 20:00 (GMT+10)",BTC/USDT,106732,107132,,BTCUSD_2025-07-10_14-15-44_39853.png,20:00,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,Profit,"June 9, 2025 20:15 (GMT+10)",BTC/USDT,107234,107634,,BTCUSD_2025-07-10_14-29-20_a84ee.png,20:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,Profit,"June 9, 2025 21:15 (GMT+10)",BTC/USDT,107486,107886,,BTCUSD_2025-07-10_14-36-33_e00e7.png,21:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,loss,"June 9, 2025 22:30 (GMT+10)",BTC/USDT,107623,107423,,BTCUSD_2025-07-10_14-38-18_910e0.png,22:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum (1),,Long,loss,"June 9, 2025 22:45 (GMT+10)",BTC/USDT,107623,107423,,BTCUSD_2025-07-10_14-38-18_910e0.png,22:45,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum (2),4,Long,Profit,"June 10, 2025 3:15 (GMT+10)",BTC/USDT,108331,108731,,BTCUSD_2025-07-10_14-40-41_f3e6e.png,03:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum (3),,Long,Profit,"June 10, 2025 5:30 (GMT+10)",BTC/USDT,108491,108893,,BTCUSD_2025-07-10_14-42-45_d60e1.png,05:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum (3),,Long,loss,"June 10, 2025 7:30 (GMT+10)",BTC/USDT,110494,110894,,BTCUSD_2025-07-10_15-45-28_5b972.png,07:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum (3),,Long,Profit,"June 11, 2025 5:15 (GMT+10)",BTC/USDT,109549,109949,,BTCUSD_2025-07-10_15-56-03_c7549.png,05:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum (3),,Long,loss,"June 11, 2025 5:30 (GMT+10)",BTC/USDT,110070,109670,,BTCUSD_2025-07-10_15-59-51_c02ad.png,05:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum ,,Long,loss,"June 11, 2025 7:00 (GMT+10)",BTC/USDT,109991,109791,,BTCUSD_2025-07-10_16-02-03_a917b.png,07:00,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum (1),,Long,loss,"June 11, 2025 8:15 (GMT+10)",BTC/USDT,110057,109857,,BTCUSD_2025-07-10_16-02-03_a917b.png,08:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum (2),,Long,loss,"June 11, 2025 10:00 (GMT+10)",BTC/USDT,110286,110086,,BTCUSD_2025-07-10_16-02-03_a917b.png,10:00,,logged
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma ,,Long,loss,"June 12, 2025 9:30 (GMT+10)",BTC/USDT,108610,108410,,BTCUSD_2025-07-11_11-48-22_f5118.png,09:30,,logged
+strategy+ avoid Ema line + liquidity lines,-just indicator,,Short,Profit,"June 12, 2025 13:30 (GMT+10)",BTC/USDT,108039,107639,,BTCUSD_2025-07-11_11-49-49_dd37d.png,13:30,,logged
+strategy+ avoid Ema line + liquidity lines,-just indicator,,Short,loss,"June 12, 2025 14:15 (GMT+10)",BTC/USDT,107773,107973,,BTCUSD_2025-07-11_11-51-47_06a16.png,14:15,,logged
+strategy+ avoid Ema line + liquidity lines,-just indicator,,Short,loss,"June 12, 2025 14:30 (GMT+10)",BTC/USDT,107630,107830,,BTCUSD_2025-07-11_11-51-47_06a16%201.png,14:30,,logged
+strategy+ avoid Ema line + liquidity lines,-just indicator,,Short,Profit,"June 12, 2025 20:15 (GMT+10)",BTC/USDT,107419,107019,,BTCUSD_2025-07-11_11-57-44_1646b.png,20:15,,logged
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma ,,Long,loss,"June 13, 2025 3:30 (GMT+10)",BTC/USDT,108210,108010,,BTCUSD_2025-07-11_12-12-40_065fc.png,03:30,,logged
+strategy+ avoid Ema line + liquidity lines,-sed,,Short,loss,"June 13, 2025 10:15 (GMT+10)",BTC/USDT,104349,104549,,BTCUSD_2025-07-11_12-15-24_34131.png,10:15,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again,,Short,Profit,"June 14, 2025 12:00 (GMT+10)",BTC/USDT,105556,105156,,BTCUSD_2025-07-11_12-20-27_e8555.png,12:00,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum ,,Short,Profit,"June 14, 2025 12:15 (GMT+10)",BTC/USDT,105556,105156,,BTCUSD_2025-07-11_12-20-27_e8555%201.png,12:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum (1),,Short,Profit,"June 14, 2025 14:00 (GMT+10)",BTC/USDT,105375,104975,,BTCUSD_2025-07-11_12-22-37_e356b.png,14:00,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum ,,Short,Profit,"June 14, 2025 16:15 (GMT+10)",BTC/USDT,105225,104825,,BTCUSD_2025-07-11_12-24-08_f6618.png,16:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum (1),,Short,Profit,"June 14, 2025 17:30 (GMT+10)",BTC/USDT,105002,104602,,BTCUSD_2025-07-11_12-26-20_5e76e.png,17:30,,logged
+strategy+ avoid Ema line + liquidity lines,-consolidation and momentum,,Short,loss,"June 15, 2025 3:00 (GMT+10)",BTC/USDT,104504,104704,,BTCUSD_2025-07-11_12-34-10_6a467.png,03:00,,logged
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma ,,Short,Profit,"June 15, 2025 16:15 (GMT+10)",BTC/USDT,105865,105465,,BTCUSD_2025-07-11_12-38-26_4ff4f.png,16:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum ,,Short,loss,"June 15, 2025 19:15 (GMT+10)",BTC/USDT,104995,104595,,BTCUSD_2025-07-11_12-40-46_c3e2d.png,19:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum (1),,Short,loss,"June 15, 2025 20:15 (GMT+10)",BTC/USDT,104995,104595,,BTCUSD_2025-07-11_12-40-46_c3e2d.png,20:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum ,,Short,Profit,"June 16, 2025 6:15 (GMT+10)",BTC/USDT,104995,104595,,BTCUSD_2025-07-11_12-43-11_5fc72.png,06:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum ,,Short,loss,"June 16, 2025 6:45 (GMT+10)",BTC/USDT,104721,104521,,BTCUSD_2025-07-11_12-53-54_ee799.png,06:45,,logged
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma ,,Long,Profit,"June 16, 2025 14:30 (GMT+10)",BTC/USDT,106254,106654,,BTCUSD_2025-07-11_13-03-46_f074e.png,14:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,Profit,"June 16, 2025 15:30 (GMT+10)",BTC/USDT,106701,107101,,BTCUSD_2025-07-11_13-03-46_f074e%201.png,15:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,loss,"June 16, 2025 17:45 (GMT+10)",BTC/USDT,107190,106990,,BTCUSD_2025-07-11_13-06-27_bfa38.png,17:45,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,4,Long,Profit,"June 17, 2025 3:00 (GMT+10)",BTC/USDT,107762,108162,,BTCUSD_2025-07-11_13-11-34_3c5e8.png,03:00,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,loss,"June 17, 2025 5:15 (GMT+10)",BTC/USDT,108664,108464,,BTCUSD_2025-07-11_13-13-19_a61b7.png,05:15,,logged
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma ,,Long,Profit,"June 17, 2025 10:15 (GMT+10)",BTC/USDT,106867,107267,,BTCUSD_2025-07-11_13-16-32_8b5c1.png,10:15,,logged
+strategy+ avoid Ema line + liquidity lines,-consolidation and momentum,,Long,loss,"June 17, 2025 12:15 (GMT+10)",BTC/USDT,107084,106884,,BTCUSD_2025-07-11_13-24-25_ebdf4.png,12:15,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again,,Long,loss,"June 17, 2025 14:15 (GMT+10)",BTC/USDT,107693,107493,,BTCUSD_2025-07-11_13-25-57_ad7ea.png,14:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,loss,"June 17, 2025 23:00 (GMT+10)",BTC/USDT,105541,105341,,BTCUSD_2025-07-11_13-34-59_ce436.png,23:00,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,Profit,"June 18, 2025 1:00 (GMT+10)",BTC/USDT,104892,104492,,BTCUSD_2025-07-11_14-26-04_81580.png,01:00,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum (1),,Short,Profit,"June 18, 2025 1:15 (GMT+10)",BTC/USDT,104766,104366,,BTCUSD_2025-07-11_14-26-04_81580.png,01:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,Profit,"June 18, 2025 2:45 (GMT+10)",BTC/USDT,104141,103741,,BTCUSD_2025-07-11_14-28-41_2b279.png,02:45,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again,,Short,loss,"June 18, 2025 8:00 (GMT+10)",BTC/USDT,104557,104957,,BTCUSD_2025-07-11_14-31-08_ff2fc.png,08:00,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,Profit,"June 18, 2025 19:30 (GMT+10)",BTC/USDT,104890,104490,,BTCUSD_2025-07-11_14-38-45_b4962.png,19:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,Profit,"June 18, 2025 20:00 (GMT+10)",BTC/USDT,104714,104314,,BTCUSD_2025-07-11_14-46-00_afc82.png,20:00,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,Profit,"June 19, 2025 3:15 (GMT+10)",BTC/USDT,104273,103873,,BTCUSD_2025-07-11_14-50-06_6c367.png,03:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,loss,"June 19, 2025 5:00 (GMT+10)",BTC/USDT,103590,103790,,BTCUSD_2025-07-11_14-51-45_5f374.png,05:00,,logged
+strategy+ avoid Ema line + liquidity lines,-Immediately after crossing sma ,,Long,loss,"June 20, 2025 18:15 (GMT+10)",BTC/USDT,106250,106050,,BTCUSD_2025-07-11_14-54-26_41f0a.png,18:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,Profit,"June 21, 2025 3:30 (GMT+10)",BTC/USDT,102929,102529,,BTCUSD_2025-07-11_14-56-03_2f606.png,03:30,,logged
+strategy+ avoid Ema line + liquidity lines,-slow momentum - went up and then momentum,4,Short,Profit,"June 22, 2025 3:30 (GMT+10)",BTC/USDT,103417,103017,,BTCUSD_2025-07-11_15-22-08_dcc4b.png,03:30,,logged
+strategy+ avoid Ema line + liquidity lines,-slow momentum - went up and then momentum (1),4,Short,Profit,"June 22, 2025 4:30 (GMT+10)",BTC/USDT,103307,102907,,BTCUSD_2025-07-11_15-22-08_dcc4b.png,04:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,Profit,"June 22, 2025 4:45 (GMT+10)",BTC/USDT,103212,102812,,BTCUSD_2025-07-11_15-35-18_63839.png,04:45,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,Profit,"June 22, 2025 5:00 (GMT+10)",BTC/USDT,102687,102287,,BTCUSD_2025-07-11_15-35-18_63839%201.png,05:00,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,Profit,"June 22, 2025 7:45 (GMT+10)",BTC/USDT,101850,101450,,BTCUSD_2025-07-11_15-37-29_cd254.png,07:45,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again,,Short,loss,"June 22, 2025 13:00 (GMT+10)",BTC/USDT,102425,102625,,BTCUSD_2025-07-11_15-41-57_e0854.png,13:00,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,Profit,"June 22, 2025 23:30 (GMT+10)",BTC/USDT,101115,100705,,BTCUSD_2025-07-11_15-44-03_01914.png,23:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,loss,"June 22, 2025 23:45 (GMT+10)",BTC/USDT,100393,100593,,BTCUSD_2025-07-11_15-49-31_83635.png,23:45,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum (1),,Short,loss,"June 23, 2025 0:30 (GMT+10)",BTC/USDT,99584,99784,,BTCUSD_2025-07-11_15-59-29_b8fed.png,00:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,loss,"June 23, 2025 0:45 (GMT+10)",BTC/USDT,99184,99384,,BTCUSD_2025-07-11_16-01-19_e6192.png,00:45,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again,,Short,loss,"June 23, 2025 6:15 (GMT+10)",BTC/USDT,98499,98699,,BTCUSD_2025-07-11_16-03-28_71b1d.png,06:15,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again,,Short,loss,"June 23, 2025 21:45 (GMT+10)",BTC/USDT,101267,101467,,BTCUSD_2025-07-11_19-47-55_dca45.png,21:45,,logged
+strategy+ avoid Ema line + liquidity lines,-sed,,Short,loss,"June 24, 2025 1:30 (GMT+10)",BTC/USDT,101582,101782,,BTCUSD_2025-07-11_19-51-32_60b88.png,01:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,Profit,"June 24, 2025 2:15 (GMT+10)",BTC/USDT,101135,100735,,BTCUSD_2025-07-11_19-54-50_831db.png,02:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Short,Profit,"June 24, 2025 2:30 (GMT+10)",BTC/USDT,100316,99916,,BTCUSD_2025-07-11_19-56-45_951e0.png,02:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,Profit,"June 24, 2025 6:15 (GMT+10)",BTC/USDT,103391,102991,,BTCUSD_2025-07-11_20-01-04_02923.png,06:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,Profit,"June 24, 2025 6:30 (GMT+10)",BTC/USDT,103829,104229,,BTCUSD_2025-07-11_20-02-34_6c24f.png,06:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,loss,"June 24, 2025 17:30 (GMT+10)",BTC/USDT,105684,105484,,BTCUSD_2025-07-11_20-58-28_fa149.png,17:30,,logged
+strategy+ avoid Ema line + liquidity lines,-consolidation  and momentum,,Long,loss,"June 25, 2025 10:15 (GMT+10)",BTC/USDT,106461,106261,,BTCUSD_2025-07-11_21-02-28_07309.png,10:15,,logged
+strategy+ avoid Ema line + liquidity lines,-slow momentm,,Long,loss,"June 25, 2025 19:15 (GMT+10)",BTC/USDT,106896,106696,,BTCUSD_2025-07-12_09-37-07_81746.png,19:15,,logged
+strategy+ avoid Ema line + liquidity lines,-slow momentm -sed,,Long,loss,"June 25, 2025 20:30 (GMT+10)",BTC/USDT,107147,106947,,BTCUSD_2025-07-12_09-40-31_0070c.png,20:30,,logged
+strategy+ avoid Ema line + liquidity lines,-slow momentm -sed,,Long,loss,"June 25, 2025 21:45 (GMT+10)",BTC/USDT,107236,107036,,BTCUSD_2025-07-12_09-41-56_10cc1.png,21:45,,logged
+strategy+ avoid Ema line + liquidity lines,-just faked out -clear momentum,,Long,loss,"June 25, 2025 23:30 (GMT+10)",BTC/USDT,107917,107717,,BTCUSD_2025-07-12_09-46-06_02a9a.png,23:30,,logged
+strategy+ avoid Ema line + liquidity lines,-just faked out -clear momentum,,Long,loss,"June 26, 2025 0:45 (GMT+10)",BTC/USDT,107829,107629,,BTCUSD_2025-07-12_09-48-03_16d1b.png,00:45,,logged
+strategy+ avoid Ema line + liquidity lines,-big consolidations -expected to breakout but didnt,,Long,loss,"June 26, 2025 13:15 (GMT+10)",BTC/USDT,107966.92,,,,13:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again,,Long,Profit,"June 27, 2025 12:45 (GMT+10)",BTC/USDT,107298,107698,,BTCUSD_2025-07-12_10-41-46_ca770.png,12:45,,logged
+strategy+ avoid Ema line + liquidity lines,-went down but showed momentum again,,Long,Profit,"June 27, 2025 14:30 (GMT+10)",BTC/USDT,1074645,107865,,BTCUSD_2025-07-12_10-41-46_ca770%201.png,14:30,,logged
+strategy+ avoid Ema line + liquidity lines,-slow momentum so doubled the risk,,Long,Profit,"June 28, 2025 16:30 (GMT+10)",BTC/USDT,107483,107883,,BTCUSD_2025-07-12_10-52-16_e6c27.png,16:30,,logged
+strategy+ avoid Ema line + liquidity lines,-slow momentum so doubled the risk (1),,Long,Profit,"June 28, 2025 17:45 (GMT+10)",BTC/USDT,107483,107883,,BTCUSD_2025-07-12_10-52-16_e6c27.png,17:45,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,loss,"June 28, 2025 20:15 (GMT+10)",BTC/USDT,108184,107984,,BTCUSD_2025-07-12_10-55-06_94bf0.png,20:15,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,Profit,"June 30, 2025 8:30 (GMT+10)",BTC/USDT,108042,108442,,BTCUSD_2025-07-12_11-02-50_4326e.png,08:30,,logged
+strategy+ avoid Ema line + liquidity lines,-clear momentum,,Long,loss,"June 30, 2025 12:00 (GMT+10)",BTC/USDT,108553,108353,,BTCUSD_2025-07-12_11-14-56_0eb7b.png,12:00,,logged
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"August 4, 2025",,,,,,00:00,,
+strategy+ avoid Ema line + liquidity lines,-trend was upside on the daily and hourly screen touchdown on the 400 ema,,Short,loss,"August 4, 2025 14:45 (GMT+10)",BTC/USDT,114388.88,,,Screenshot_2026-02-21_183847.png,14:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-big shift upwards after consolidation -still made it but just too volatile,,Long,loss,"August 4, 2025 23:45 (GMT+10)",BTC/USDT,114788.10,,,Screenshot_2026-02-21_185923.png,23:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-jumped back up from the ema line,,Long,Profit,"August 5, 2025 3:00 (GMT+10)",BTC/USDT,115301.00,,,Screenshot_2026-02-21_194131.png,03:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-jumped back up from the ema line (1),,Long,loss,"August 5, 2025 3:15 (GMT+10)",BTC/USDT,115696.80,,,Screenshot_2026-02-21_194131.png,03:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-jumped back up from the ema line (1),,Long,loss,"August 5, 2025 6:45 (GMT+10)",BTC/USDT,115022.01,,,Screenshot_2026-02-21_195506.png,06:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-big shift downwards ,,Short,Profit,"August 5, 2025 13:15 (GMT+10)",BTC/USDT,114466.90,,,Screenshot_2026-02-21_195840.png,13:15,,estimated (15m open)
+,,,,,,,,,,,,,
+strategy+ avoid Ema line + liquidity lines,-jumped back up from the ema line (1),,Long,loss,"August 5, 2025 20:30 (GMT+10)",BTC/USDT,114960.03,,,Screenshot_2026-02-21_204619.png,20:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,"-went up from way down and crossed ema but consolidated for a few candles, was hesitating but took it anyway",,Long,loss,"August 5, 2025 22:00 (GMT+10)",BTC/USDT,114827.07,,,Screenshot_2026-02-21_205405.png,22:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-jumped back up from the ema line  - big candles,4,Short,Profit,"August 5, 2025 22:30 (GMT+10)",BTC/USDT,114530.01,,,Screenshot_2026-02-21_210008.png,22:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,- continuation of the last momentum. Big candles - big wick underneath,,Short,loss,"August 5, 2025 22:45 (GMT+10)",BTC/USDT,113885.49,,,Screenshot_2026-02-21_210417.png,22:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-went back didnt touch the line but got down slowly again,,Short,loss,"August 6, 2025 13:30 (GMT+10)",BTC/USDT,113432.02,,,Screenshot_2026-02-21_210417%201.png,13:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-went back didnt touch the line but got down slowly again (1),,Short,loss,"August 6, 2025 13:30 (GMT+10)",BTC/USDT,113432.02,,,Screenshot_2026-02-21_210417%201.png,13:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,- big upcandle few candles back,,Long,loss,"August 7, 2025 3:45 (GMT+10)",BTC/USDT,115460.70,,,,03:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,- slow good upward momentum after jumping back from 400 ema,,Long,loss,"August 7, 2025 18:30 (GMT+10)",BTC/USDT,115146.03,,,Screenshot_2026-02-21_211712.png,18:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,- slow good upward momentum after jumping back from 400 ema (1),,Long,Profit,"August 7, 2025 20:15 (GMT+10)",BTC/USDT,115500.00,,,Screenshot_2026-02-21_211712.png,20:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"August 8, 2025 6:00 (GMT+10)",BTC/USDT,117461.99,,,Screenshot_2026-02-21_212457.png,06:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,- slow good upward momentum after turning back midway,,Long,Profit,"August 9, 2025 19:00 (GMT+10)",BTC/USDT,117106.66,,,Screenshot_2026-02-21_213724.png,19:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,- slow good upward momentum after turning back midway,,Long,loss,"August 9, 2025 20:15 (GMT+10)",BTC/USDT,117762.77,,,Screenshot_2026-02-21_213724%201.png,20:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,- good momentum followup,,Long,Profit,"August 10, 2025 13:30 (GMT+10)",,118362.97,,,Screenshot_2026-02-21_215546.png,13:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,- consolidation and upward momentum,4,Long,Profit,"August 10, 2025 22:00 (GMT+10)",,118330.58,,,Screenshot_2026-02-21_215546%201.png,22:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,6,Long,Profit,"August 11, 2025 11:45 (GMT+10)",,119758.91,,,Screenshot_2026-02-21_220351.png,11:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"August 12, 2025 2:00 (GMT+10)",BTC/USDT,120314.40,,,Screenshot_2026-02-21_213724%202.png,02:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,- jumped back from the line (1),,Long,loss,"August 12, 2025 10:30 (GMT+10)",BTC/USDT,118886.82,,,Screenshot_2026-02-22_182002.png,10:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,- jumped back from the line,,Long,loss,"August 12, 2025 12:45 (GMT+10)",BTC/USDT,119169.26,,,Screenshot_2026-02-22_182002.png,12:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"August 12, 2025 18:45 (GMT+10)",,119037.63,,,Screenshot_2026-02-22_182002%201.png,18:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"August 12, 2025 22:45 (GMT+10)",BTC/USDT,119112.02,,,Screenshot_2026-02-22_183204.png,22:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,- touch the line consolidat5ion and upward trend,,Long,Profit,"August 13, 2025 1:15 (GMT+10)",BTC/USDT,119457.18,,,Screenshot_2026-02-22_183204%201.png,01:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,- consolidationa and jump back up,,Long,Profit,"August 13, 2025 18:15 (GMT+10)",BTC/USDT,119786.75,,,Screenshot_2026-02-22_184409.png,18:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,- continuation of the trend,,Long,loss,"August 13, 2025 20:15 (GMT+10)",,120395.99,,,Screenshot_2026-02-22_184951.png,20:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,Profit,"August 14, 2025",,,,,Screenshot_2026-02-22_184951%201.png,00:00,,
+strategy+ avoid Ema line + liquidity lines,- high from ema line but jumped back after a quick drawdown,,Long,Profit,"August 14, 2025 2:30 (GMT+10)",,121538.15,,,Screenshot_2026-02-22_184951%202.png,02:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,Profit,"August 14, 2025 3:15 (GMT+10)",,121603.46,,,Screenshot_2026-02-22_184951%203.png,03:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,Profit,"August 14, 2025 5:30 (GMT+10)",,122358.00,,,,05:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,- CONTINUATION,,Long,loss,"August 14, 2025 7:00 (GMT+10)",,122904.01,,,Screenshot_2026-02-22_191438.png,07:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-steep down crossing the ema line,,Short,Profit,"August 14, 2025 22:45 (GMT+10)",,119531.41,,,Screenshot_2026-02-22_192535.png,22:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-jump back  up and downwards again,,Short,Profit,"August 15, 2025 1:45 (GMT+10)",,118088.90,,,Screenshot_2026-02-22_192900.png,01:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"August 15, 2025 7:45 (GMT+10)",,117567.58,,,,07:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-consolidation and downwards,,Short,Profit,"August 15, 2025 23:30 (GMT+10)",,118464.17,,,,23:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-continuation just touched the wick,,Short,loss,"August 15, 2025 23:45 (GMT+10)",,118026.00,,,,23:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-continuation just touched the wick (1),,Short,loss,"August 15, 2025 23:45 (GMT+10)",,118026.00,,,,23:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"August 16, 2025 5:15 (GMT+10)",,117286.23,,,,05:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-touch the line and get back downards,,Short,Profit,"August 18, 2025 1:30 (GMT+10)",,118150.33,,,Screenshot_2026-02-22_202546.png,01:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-jump back  up and downwards again,,Short,Profit,"August 18, 2025 9:30 (GMT+10)",,117559.99,,,,09:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-jump back  up and downwards again (1),,Short,Profit,"August 18, 2025 10:15 (GMT+10)",,117512.98,,,,10:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-jump back  up and downwards again (2),,Short,loss,"August 18, 2025 10:30 (GMT+10)",,117142.44,,,,10:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"August 18, 2025 10:30 (GMT+10)",,117142.44,,,,10:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"August 18, 2025 11:45 (GMT+10)",,116427.59,,,,11:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"August 18, 2025 13:45 (GMT+10)",,115166.00,,,,13:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-good flow downwards -jumped back but satisfied conditions,,Short,loss,"August 18, 2025 15:15 (GMT+10)",,115681.63,,,Screenshot_2026-03-02_160754.png,15:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-good flow downwards -jumped back but satisfied conditions (1),,Short,loss,"August 18, 2025 17:30 (GMT+10)",,115352.00,,,Screenshot_2026-03-02_160754.png,17:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,--jump back  up and downwards again (1),,Short,loss,"August 20, 2025 1:00 (GMT+10)",,113882.66,,,,01:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,--jump back  up and downwards again (2),,Short,loss,"August 20, 2025 21:45 (GMT+10)",,113175.23,,,,21:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,--jump back  up and downwards again (3),,Short,loss,"August 21, 2025 0:00 (GMT+10)",,112693.14,,,,00:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,--jump back  up and downwards again (4),,Short,loss,"August 21, 2025 17:15 (GMT+10)",,113656.01,,,,17:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,--jump back  up and downwards again (5),,Short,loss,"August 21, 2025 22:00 (GMT+10)",,113148.65,,,,22:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,--jump back  up and downwards again (6),,Short,loss,"August 21, 2025 22:45 (GMT+10)",,113162.97,,,,22:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-slow down momentum but big candles,,Short,Profit,"August 22, 2025 1:45 (GMT+10)",,113021.50,,,,01:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-continu momentum but wont be able to take this one,,Short,Profit,"August 22, 2025 2:30 (GMT+10)",,112738.00,,,,02:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-continu momentum but wont be able to take this one (1),,Short,loss,"August 22, 2025 3:30 (GMT+10)",,112250.47,,,,03:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"August 22, 2025 5:45 (GMT+10)",,112104.59,,,,05:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"August 22, 2025 21:15 (GMT+10)",,112313.99,,,,21:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"August 22, 2025 22:30 (GMT+10)",,112045.13,,,,22:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"August 24, 2025 2:30 (GMT+10)",,114867.60,,,,02:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"August 24, 2025 23:45 (GMT+10)",,114643.19,,,,23:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"August 25, 2025 5:45 (GMT+10)",,113079.32,,,,05:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"August 25, 2025 10:45 (GMT+10)",,112265.72,,,,10:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"August 25, 2025 15:15 (GMT+10)",,112561.81,,,,15:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"August 25, 2025 16:30 (GMT+10)",,112249.74,,,,16:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"August 25, 2025 17:00 (GMT+10)",,111929.87,,,,17:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"August 26, 2025 5:15 (GMT+10)",,112150.01,,,,05:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"August 26, 2025 21:30 (GMT+10)",,109859.04,,,,21:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"August 27, 2025 11:00 (GMT+10)",,111356.38,,,,11:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"August 27, 2025 13:15 (GMT+10)",,111041.47,,,,13:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"August 27, 2025 13:30 (GMT+10)",,110966.00,,,,13:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"August 28, 2025 3:30 (GMT+10)",,112309.17,,,,03:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"August 28, 2025 7:30 (GMT+10)",,111802.18,,,,07:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"August 28, 2025 10:30 (GMT+10)",,111138.50,,,,10:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,Profit,"August 28, 2025 14:45 (GMT+10)",,112783.19,,,,14:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"August 28, 2025 15:00 (GMT+10)",,112965.89,,,,15:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"August 29, 2025 11:30 (GMT+10)",,111551.92,,,,11:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"August 29, 2025 15:30 (GMT+10)",,111314.70,,,,15:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"August 30, 2025 0:00 (GMT+10)",,109106.14,,,,00:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"August 30, 2025 4:30 (GMT+10)",,108126.96,,,,04:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"August 31, 2025 21:00 (GMT+10)",,108560.23,,,,21:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 1, 2026 1:30 (GMT+11)",,81587.99,,,,01:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 1, 2026 1:45 (GMT+11)",,80995.79,,,,01:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 1, 2026 3:15 (GMT+11)",,80992.48,,,,03:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 1, 2026 4:15 (GMT+11)",,78852.22,,,,04:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 1, 2026 5:45 (GMT+11)",,77557.19,,,,05:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 2, 2026 1:00 (GMT+11)",,78317.51,,,,01:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 2, 2026 2:30 (GMT+11)",,76984.00,,,,02:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 2, 2026 9:30 (GMT+11)",,77196.21,,,,09:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,10,Short,Profit,"February 2, 2026 13:45 (GMT+11)",,76972.22,,,,13:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 2, 2026 14:45 (GMT+11)",,74637.61,,,,14:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 2, 2026 16:30 (GMT+11)",,75087.99,,,,16:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 3, 2026 5:30 (GMT+11)",,78430.36,,,,05:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 3, 2026 17:15 (GMT+11)",,78069.72,,,,17:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 3, 2026 22:00 (GMT+11)",,78120.36,,,,22:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 4, 2026 1:30 (GMT+11)",,78425.83,,,,01:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 4, 2026 2:00 (GMT+11)",,77201.21,,,,02:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 5, 2026 0:45 (GMT+11)",,75358.08,,,,00:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 5, 2026 1:00 (GMT+11)",,74867.00,,,,01:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 5, 2026 4:45 (GMT+11)",,72769.17,,,,04:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 5, 2026 14:00 (GMT+11)",,71454.44,,,,14:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 5, 2026 15:15 (GMT+11)",,70950.64,,,,15:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,6,Short,Profit,"February 5, 2026 16:15 (GMT+11)",,70843.36,,,,16:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 5, 2026 16:30 (GMT+11)",,70433.11,,,,16:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 5, 2026 23:30 (GMT+11)",,69640.87,,,,23:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 6, 2026 2:00 (GMT+11)",,69404.75,,,,02:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 6, 2026 2:45 (GMT+11)",,67519.99,,,,02:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 6, 2026 5:30 (GMT+11)",,65851.28,,,,05:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 6, 2026 11:00 (GMT+11)",,62909.87,,,,11:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 6, 2026 11:15 (GMT+11)",,60255.65,,,,11:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 6, 2026 17:45 (GMT+11)",,65082.62,,,,17:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 6, 2026 18:00 (GMT+11)",,64988.26,,,,18:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 7, 2026 10:30 (GMT+11)",,70576.39,,,,10:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 7, 2026 11:15 (GMT+11)",,70271.66,,,,11:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 7, 2026 15:30 (GMT+11)",,71151.31,,,,15:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 7, 2026 15:45 (GMT+11)",,70705.51,,,,15:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 7, 2026 16:30 (GMT+11)",,70271.98,,,,16:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 7, 2026 21:00 (GMT+11)",,68138.19,,,,21:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 7, 2026 21:45 (GMT+11)",,67793.87,,,,21:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 8, 2026 1:45 (GMT+11)",,68806.70,,,,01:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 8, 2026 10:45 (GMT+11)",,69259.35,,,,10:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 8, 2026 20:45 (GMT+11)",,70131.27,,,,20:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,Profit,"February 8, 2026 22:30 (GMT+11)",,70704.01,,,,22:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,no trade immediate candle,,Long,Profit,"February 8, 2026 22:45 (GMT+11)",,70899.91,,,,22:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"February 9, 2026 1:00 (GMT+11)",,71514.77,,,,01:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 9, 2026 4:00 (GMT+11)",,70415.99,,,,04:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,Profit,"February 9, 2026 5:15 (GMT+11)",,70905.48,,,,05:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"February 9, 2026 5:45 (GMT+11)",,71307.98,,,,05:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,Profit,"February 9, 2026 9:00 (GMT+11)",,70700.01,,,,09:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"February 9, 2026 10:15 (GMT+11)",,71366.00,,,,10:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 9, 2026 11:00 (GMT+11)",,70330.38,,,,11:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 9, 2026 12:45 (GMT+11)",,70250.00,,,,12:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"February 9, 2026 14:45 (GMT+11)",,71134.96,,,,14:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"February 9, 2026 17:30 (GMT+11)",,70420.35,,,,17:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 9, 2026 21:30 (GMT+11)",,69038.84,,,,21:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 9, 2026 21:45 (GMT+11)",,68622.43,,,,21:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 10, 2026 1:15 (GMT+11)",,68608.86,,,,01:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,Profit,"February 10, 2026 6:30 (GMT+11)",,70676.47,,,,06:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 10, 2026 17:45 (GMT+11)",,69031.10,,,,17:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 10, 2026 23:00 (GMT+11)",,68535.02,,,,23:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 11, 2026 1:45 (GMT+11)",,68234.89,,,,01:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 11, 2026 5:45 (GMT+11)",,68993.86,,,,05:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 11, 2026 14:00 (GMT+11)",,68677.34,,,,14:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 11, 2026 15:30 (GMT+11)",,67576.63,,,,15:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 11, 2026 17:00 (GMT+11)",,67404.28,,,,17:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 11, 2026 17:15 (GMT+11)",,66916.36,,,,17:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 11, 2026 22:00 (GMT+11)",,66531.99,,,,22:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,-doji candle oppo colour,,Short,Profit,"February 12, 2026 15:30 (GMT+11)",,67212.00,,,,15:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 13, 2026 0:15 (GMT+11)",,67844.30,,,,00:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 13, 2026 2:15 (GMT+11)",,67416.00,,,,02:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"February 14, 2026 5:15 (GMT+11)",,69026.02,,,,05:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,Profit,"February 14, 2026 19:00 (GMT+11)",,69219.27,,,,19:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,Profit,"February 14, 2026 20:00 (GMT+11)",,69746.20,,,,20:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"February 15, 2026 1:45 (GMT+11)",,69673.60,,,,01:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"February 15, 2026 8:15 (GMT+11)",,70211.82,,,,08:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,Profit,"February 15, 2026 15:00 (GMT+11)",,69954.50,,,,15:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"February 15, 2026 19:45 (GMT+11)",,70330.23,,,,19:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 16, 2026 5:00 (GMT+11)",,68641.21,,,,05:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"February 16, 2026 9:30 (GMT+11)",,69011.19,,,,09:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 16, 2026 10:15 (GMT+11)",,68490.81,,,,10:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,Profit,"February 16, 2026 11:30 (GMT+11)",,68850.95,,,,11:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"February 16, 2026 14:45 (GMT+11)",,68353.86,,,,14:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 16, 2026 16:15 (GMT+11)",,68473.17,,,,16:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"February 16, 2026 20:15 (GMT+11)",,68886.01,,,,20:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,Profit,"February 16, 2026 21:30 (GMT+11)",,68797.39,,,,21:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"February 17, 2026 0:15 (GMT+11)",,69662.01,,,,00:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 17, 2026 0:30 (GMT+11)",,68611.01,,,,00:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 17, 2026 0:45 (GMT+11)",,68430.65,,,,00:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 17, 2026 13:00 (GMT+11)",,68618.12,,,,13:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 17, 2026 18:45 (GMT+11)",,68409.60,,,,18:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 18, 2026 1:45 (GMT+11)",,67103.87,,,,01:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 19, 2026 3:00 (GMT+11)",,67694.01,,,,03:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 19, 2026 4:15 (GMT+11)",,67084.00,,,,04:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 19, 2026 5:45 (GMT+11)",,66342.31,,,,05:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 19, 2026 6:45 (GMT+11)",,66163.20,,,,06:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 19, 2026 22:45 (GMT+11)",,66673.30,,,,22:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"February 20, 2026 16:45 (GMT+11)",,67910.17,,,,16:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 20, 2026 23:00 (GMT+11)",,67318.41,,,,23:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 20, 2026 23:00 (GMT+11)",,67318.41,,,,23:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 21, 2026 0:15 (GMT+11)",,67143.24,,,,00:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,Profit,"February 21, 2026 15:30 (GMT+11)",,67717.01,,,,15:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"February 22, 2026 1:30 (GMT+11)",,68432.80,,,,01:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"February 22, 2026 23:00 (GMT+11)",,68219.97,,,,23:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 23, 2026 2:00 (GMT+11)",,67443.89,,,,02:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 23, 2026 11:45 (GMT+11)",,67180.24,,,,11:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 23, 2026 12:00 (GMT+11)",,66740.47,,,,12:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 23, 2026 12:15 (GMT+11)",,65481.74,,,,12:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 24, 2026 4:30 (GMT+11)",,64577.76,,,,04:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 24, 2026 6:45 (GMT+11)",,64213.24,,,,06:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 24, 2026 12:30 (GMT+11)",,64432.89,,,,12:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 24, 2026 16:30 (GMT+11)",,62820.77,,,,16:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,Profit,"February 25, 2026 23:30 (GMT+11)",,65780.60,,,,23:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,Profit,"February 26, 2026 3:30 (GMT+11)",,67872.17,,,,03:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"February 26, 2026 4:15 (GMT+11)",,68512.39,,,,04:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"February 26, 2026 5:30 (GMT+11)",,69348.39,,,,05:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"February 26, 2026 6:30 (GMT+11)",,68972.90,,,,06:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"February 26, 2026 21:00 (GMT+11)",,68589.41,,,,21:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,Profit,"February 27, 2026 5:15 (GMT+11)",,66771.51,,,,05:15,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,Profit,"February 27, 2026 15:00 (GMT+11)",,67600.84,,,,15:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Long,loss,"February 27, 2026 20:30 (GMT+11)",,68026.04,,,,20:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 27, 2026 21:30 (GMT+11)",,66789.24,,,,21:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 27, 2026 22:45 (GMT+11)",,66002.59,,,,22:45,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 28, 2026 4:00 (GMT+11)",,65475.21,,,,04:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,loss,"February 28, 2026 6:00 (GMT+11)",,65314.76,,,,06:00,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 28, 2026 17:30 (GMT+11)",,64570.21,,,,17:30,,estimated (15m open)
+strategy+ avoid Ema line + liquidity lines,,,Short,Profit,"February 28, 2026 17:45 (GMT+11)",,64052.07,,,,17:45,,estimated (15m open)
+,,,,,,,,,,,,,

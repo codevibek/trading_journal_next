@@ -17,7 +17,8 @@ export async function GET() {
     win: t.outcome === "win" ? 1 : 0,
     ...(features && "rsi15" in features ? features : {}),
   }));
-  return new Response(Papa.unparse(rows), {
+  const columns = [...new Set(rows.flatMap((r) => Object.keys(r)))];
+  return new Response(Papa.unparse(rows, { columns }), {
     headers: {
       "Content-Type": "text/csv",
       "Content-Disposition": `attachment; filename="trades-with-context-${new Date().toISOString().slice(0, 10)}.csv"`,

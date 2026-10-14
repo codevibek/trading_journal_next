@@ -13,7 +13,10 @@ export async function getTrade(id: number): Promise<Trade | undefined> {
   const [row] = await query(`SELECT ${COLUMNS} FROM trades WHERE id = $1`, [id]);
   return row;
 }
-
+export async function deleteAllTrades() {
+  const rows = await query(`DELETE FROM trades RETURNING id`);
+  return rows.length;
+}
 export function validate(input: any) {
   const side = normSide(input.side);
   const outcome = normOutcome(input.outcome);

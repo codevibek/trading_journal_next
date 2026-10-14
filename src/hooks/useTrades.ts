@@ -24,10 +24,25 @@ export function useTrades() {
     reload();
   }, [reload]);
 
-  const strategies = useMemo(() => [...new Set(trades.map((t) => t.strategy))].sort(), [trades]);
+  const removeAll = async () => {
+    if (
+      !confirm(
+        `Delete all ${trades.length} trades? Screenshots and notes go too. This can't be undone.`,
+      )
+    )
+      return;
+    await api("/api/trades?confirm=all", { method: "DELETE" });
+    setTrades([]);
+  };
+  const strategies = useMemo(
+    () => [...new Set(trades.map((t) => t.strategy))].sort(),
+    [trades],
+  );
 
   const visible = trades.filter(
-    (t) => (strategy === "All" || t.strategy === strategy) && (outcome === "all" || t.outcome === outcome),
+    (t) =>
+      (strategy === "All" || t.strategy === strategy) &&
+      (outcome === "all" || t.outcome === outcome),
   );
 
   const equity = useMemo(
@@ -35,13 +50,20 @@ export function useTrades() {
       [...trades]
         .sort((a, b) => Date.parse(a.entryTime) - Date.parse(b.entryTime))
         .reduce<{ time: string; r: number }[]>((acc, t) => {
-          acc.push({ time: t.entryTime, r: (acc.at(-1)?.r ?? 0) + rOf(t.outcome) });
+          acc.push({
+            time: t.entryTime,
+            r: (acc.at(-1)?.r ?? 0) + rOf(t.outcome),
+          });
           return acc;
         }, []),
     [trades],
   );
 
-  const monthStart = new Date(new Date().getFullYear(), new Date().getMonth(), 1).getTime();
+  const monthStart = new Date(
+    new Date().getFullYear(),
+    new Date().getMonth(),
+    1,
+  ).getTime();
   const thisMonth = trades.filter((t) => Date.parse(t.entryTime) >= monthStart);
 
   const totalR = visible.reduce((sum, t) => sum + rOf(t.outcome), 0);
@@ -57,12 +79,16 @@ export function useTrades() {
     filters: { strategy, setStrategy, outcome, setOutcome },
     all: trades,
     equity,
-    thisMonth: { count: thisMonth.length, r: thisMonth.reduce((sum, t) => sum + rOf(t.outcome), 0) },
+    thisMonth: {
+      count: thisMonth.length,
+      r: thisMonth.reduce((sum, t) => sum + rOf(t.outcome), 0),
+    },
     stats: {
       count: visible.length,
       winRate: decided ? wins / decided : 0,
       totalR,
       totalUsd: totalR * RISK_USD,
     },
+    removeAll,
   };
 }
