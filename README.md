@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Trade Desk
 
-## Getting Started
+Morning news briefing, BTC trade journal, and win-rate insights in one Next.js app. Add it to your phone's home screen and it behaves like an app.
 
-First, run the development server:
+## Run it locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000. With no `DATABASE_URL`, data is stored in `./.data` on your machine, so there's nothing else to install.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Screens
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Briefing**: fetches crypto and market RSS feeds, scores each headline for impact and sentiment, and reads the top stories aloud. Every headline is saved with its timestamp, which builds the news history the Insights screen uses.
+- **Journal**: log trades with direction, result, entry and exit prices, notes and a chart screenshot. Each trade shows the market at entry and the news from the 3 hours before.
+- **Import**: upload the Notion export (.zip with screenshots, or just the .csv). You match columns, pick the timezone the dates were logged in, check the rows, then import. Re-importing the same file skips trades that are already in the journal.
+- **Insights**: pulls BTCUSDT 15m, 1h and 4h candles from Binance for every trade. Indicators come only from candles that closed before entry. Win rates are grouped by session, trend, RSI, volatility, volume, signal candle, news and day, and each one is compared with the 33.3% breakeven for 1:2 risk to reward. **Download data for Python** exports everything as a CSV for notebooks or ML.
 
-## Learn More
+## Code layout
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+  app/            pages and API routes (app/api/*)
+  hooks/          one hook per feature: useNews, useBriefing, useTrades, useTrade, useCsvImport, useInsights
+  components/     Nav, TradeForm, RBadge
+  lib/            db, news + impact scoring, briefing + TTS, trades, dates, candles/indicators/features
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Risk settings live in `src/lib/trading.ts`: `RISK_USD = 200` and `REWARD_R = 2`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deploy (Vercel + Neon, both have free tiers)
 
-## Deploy on Vercel
+1. Push this folder to a GitHub repo.
+2. Create a Postgres database on neon.tech and copy its connection string.
+3. On vercel.com, import the repo and add these environment variables:
+   - `DATABASE_URL`: the Neon connection string
+   - `APP_PASSWORD`: the password you'll sign in with
+   - `CRON_SECRET`: any long random string
+4. Deploy, open the site on your phone, then use Share and Add to Home Screen.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Tables are created automatically on first use. `vercel.json` schedules `/api/cron/morning` at 19:00 UTC, which is 6am in Sydney during daylight saving and 5am otherwise. That run fetches news and records the briefing using your saved settings, so it plays instantly in the morning.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Notes
+
+- **Binance region**: price data comes from `data-api.binance.vision`, Binance's public market-data host. If it's ever blocked where the app runs, set `BINANCE_BASE_URL` to another Binance-compatible klines API.
+- **Voice**: the briefing uses Microsoft Edge's free read-aloud voices through `msedge-tts`. It's unofficial and can occasionally break; updating the package usually fixes it.
+- **Timezone check**: if Insights says many entries fall outside their 15m candle, the import timezone is wrong. Delete the trades and re-import with the right one.
+- **News for older trades**: headlines are only saved once the app is running, so news context fills in for trades from that point on.
+- **More feeds**: add RSS feeds without code changes with `EXTRA_FEEDS=name=url,name=url`.
