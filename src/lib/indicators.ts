@@ -36,3 +36,22 @@ export function atr(candles: Candle[], period = 14) {
 }
 
 export const trend = (closes: number[]) => (ema(closes, 20) >= ema(closes, 50) ? "up" : "down") as "up" | "down";
+
+export function emaSeries(values: number[], period: number) {
+  const k = 2 / (period + 1);
+  const out: number[] = new Array(values.length).fill(NaN);
+  if (values.length < period) return out;
+  let prev = values.slice(0, period).reduce((a, b) => a + b, 0) / period;
+  out[period - 1] = prev;
+  for (let i = period; i < values.length; i++) out[i] = prev = values[i] * k + prev * (1 - k);
+  return out;
+}
+
+export function macd(closes: number[]) {
+  const fast = emaSeries(closes, 12);
+  const slow = emaSeries(closes, 26);
+  const line = closes.map((_, i) => fast[i] - slow[i]).filter((v) => !isNaN(v));
+  const signal = emaSeries(line, 9);
+  const hist = line.map((v, i) => v - signal[i]);
+  return { line: line.at(-1)!, signal: signal.at(-1)!, hist: hist.at(-1)!, prevHist: hist.at(-2)! };
+}

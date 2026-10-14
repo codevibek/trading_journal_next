@@ -18,6 +18,7 @@ Open http://localhost:3000. Tables are created automatically. If the database is
 ## Screens
 
 - **Home**: the morning briefing player, win rate, total result, this month, an equity curve, recent trades and top headlines.
+- **Signals**: a plain-English summary of today's news (mood, main themes, most-mentioned instruments), then Buy, Sell or Neutral calls for your watchlist of crypto, stocks, forex and gold. Each call combines the 20/50 EMA trend, the higher-timeframe trend, the 200 EMA, MACD, RSI and the sentiment of related headlines into a score from −100 to +100. The reasons are listed so you can see why. Tap an instrument for a candle chart with EMAs, support and resistance, a 1:2 trade plan (stop at 1.5× ATR) and related news. Crypto prices come from Binance; stocks, forex and commodities from Yahoo Finance's free chart data. Edit the watchlist from the page. Results are cached for 15 minutes.
 - **News**: fetches crypto and market RSS feeds, scores each headline for impact and sentiment, and reads the top stories aloud. Every headline is saved with its timestamp, which builds the news history the Insights screen uses.
 - **Journal**: log trades with direction, result, entry and exit prices, notes and a chart screenshot. Each trade shows the market at entry and the news from the 3 hours before.
 - **Import**: upload the Notion export (.zip with screenshots, or just the .csv). You match columns, pick the timezone the dates were logged in, check the rows, then import. Re-importing the same file skips trades that are already in the journal.
@@ -49,6 +50,7 @@ Tables are created automatically on first use. `vercel.json` schedules `/api/cro
 
 ## Notes
 
+- **Yahoo Finance**: an unofficial free endpoint with no key. It occasionally rate-limits; set `YAHOO_BASE_URL` if you switch to a compatible source.
 - **Binance region**: price data comes from `data-api.binance.vision`, Binance's public market-data host. If it's ever blocked where the app runs, set `BINANCE_BASE_URL` to another Binance-compatible klines API.
 - **Voice**: the briefing uses Microsoft Edge's free read-aloud voices through `msedge-tts`. It's unofficial and can occasionally break; updating the package usually fixes it.
 - **Timezone check**: if Insights says many entries fall outside their 15m candle, the import timezone is wrong. Delete the trades and re-import with the right one.

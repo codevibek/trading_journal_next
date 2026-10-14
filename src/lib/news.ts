@@ -55,14 +55,14 @@ export async function fetchFeed(source: string, url: string, limit = 15) {
   });
 }
 
-export async function refreshNews() {
-  const results = await Promise.allSettled(Object.entries(FEEDS).map(([name, url]) => fetchFeed(name, url)));
+export async function refreshNews(feeds: Record<string, string> = FEEDS, limit = 15) {
+  const results = await Promise.allSettled(Object.entries(feeds).map(([name, url]) => fetchFeed(name, url, limit)));
   const failed: string[] = [];
   let inserted = 0;
 
   for (const [i, r] of results.entries()) {
     if (r.status === "rejected") {
-      failed.push(Object.keys(FEEDS)[i]);
+      failed.push(Object.keys(feeds)[i]);
       continue;
     }
     for (const a of r.value) {

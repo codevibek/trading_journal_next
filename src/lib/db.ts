@@ -29,6 +29,12 @@ CREATE TABLE IF NOT EXISTS settings (
   value JSONB NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS signal_cache (
+  key TEXT PRIMARY KEY,
+  data JSONB NOT NULL,
+  computed_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
 CREATE TABLE IF NOT EXISTS trades (
   id SERIAL PRIMARY KEY,
   strategy TEXT NOT NULL DEFAULT 'Default',

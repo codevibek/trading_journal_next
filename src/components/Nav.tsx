@@ -6,6 +6,7 @@ import Icon, { type IconName } from "./Icon";
 
 const LINKS: { href: string; label: string; icon: IconName }[] = [
   { href: "/", label: "Home", icon: "home" },
+  { href: "/signals", label: "Signals", icon: "chart" },
   { href: "/news", label: "News", icon: "news" },
   { href: "/journal", label: "Journal", icon: "journal" },
   { href: "/insights", label: "Insights", icon: "insights" },
@@ -16,7 +17,7 @@ export default function Nav() {
   const path = usePathname();
   if (path === "/login") return null;
   const active = (href: string) => (href === "/" ? path === "/" : path.startsWith(href) && path !== "/journal/new");
-  const tabs = [LINKS[0], LINKS[1], null, LINKS[2], LINKS[3]];
+  const tabs = [LINKS[0], LINKS[1], null, LINKS[3], LINKS[4]];
 
   return (
     <>
