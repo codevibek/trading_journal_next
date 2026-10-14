@@ -56,3 +56,4 @@ Tables are created automatically on first use. `vercel.json` schedules `/api/cro
 - **Timezone check**: if Insights says many entries fall outside their 15m candle, the import timezone is wrong. Delete the trades and re-import with the right one.
 - **News for older trades**: headlines are only saved once the app is running, so news context fills in for trades from that point on.
 - **More feeds**: add RSS feeds without code changes with `EXTRA_FEEDS=name=url,name=url`.
+# trading_journal_next
