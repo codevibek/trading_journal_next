@@ -3,14 +3,16 @@ import { normOutcome, normPrice, normSide, type Trade } from "./trading";
 
 const COLUMNS = `id, strategy, side, outcome, entry_time AS "entryTime", entry_price AS "entryPrice",
   exit_price AS "exitPrice", notes, image IS NOT NULL AS "hasImage", image_url AS "imageUrl",
-  image_ref AS "imageRef", features`;
+  image_ref AS "imageRef", features, news_context AS "newsContext"`;
 
 export async function listTrades(): Promise<Trade[]> {
   return query(`SELECT ${COLUMNS} FROM trades ORDER BY entry_time DESC`);
 }
 
 export async function getTrade(id: number): Promise<Trade | undefined> {
-  const [row] = await query(`SELECT ${COLUMNS} FROM trades WHERE id = $1`, [id]);
+  const [row] = await query(`SELECT ${COLUMNS} FROM trades WHERE id = $1`, [
+    id,
+  ]);
   return row;
 }
 export async function deleteAllTrades() {
@@ -52,7 +54,17 @@ export async function insertTrade(t: TradeInput) {
     `INSERT INTO trades (strategy, side, outcome, entry_time, entry_price, exit_price, notes, image_url, image_ref)
      VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9)
      ON CONFLICT (entry_time, strategy, entry_price) DO NOTHING RETURNING id`,
-    [t.strategy, t.side, t.outcome, t.entryTime, t.entryPrice, t.exitPrice, t.notes, t.imageUrl, t.imageRef],
+    [
+      t.strategy,
+      t.side,
+      t.outcome,
+      t.entryTime,
+      t.entryPrice,
+      t.exitPrice,
+      t.notes,
+      t.imageUrl,
+      t.imageRef,
+    ],
   );
   return row?.id as number | undefined;
 }
@@ -61,8 +73,18 @@ export async function updateTrade(id: number, t: TradeInput) {
   await query(
     `UPDATE trades SET strategy=$2, side=$3, outcome=$4, entry_time=$5, entry_price=$6, exit_price=$7, notes=$8,
        features = CASE WHEN entry_time = $5 THEN features ELSE NULL END
-     WHERE id = $1`,
-    [id, t.strategy, t.side, t.outcome, t.entryTime, t.entryPrice, t.exitPrice, t.notes],
+     WHERE id = $1,
+       news_context = CASE WHEN entry_time = $5 THEN news_context ELSE NULL END`,
+    [
+      id,
+      t.strategy,
+      t.side,
+      t.outcome,
+      t.entryTime,
+      t.entryPrice,
+      t.exitPrice,
+      t.notes,
+    ],
   );
 }
 
@@ -76,7 +98,7 @@ export async function newsBefore(entryTime: string | Date, hours = 3) {
             impact_score AS "impactScore", impact_level AS "impactLevel"
      FROM news_articles
      WHERE published_at BETWEEN $1::timestamptz - make_interval(hours => $2::int) AND $1::timestamptz
-     ORDER BY impact_score DESC LIMIT 8`,
+     ORDER BY impact_score DESC, published_at DESC LIMIT 10`,
     [entryTime, hours],
   );
 }

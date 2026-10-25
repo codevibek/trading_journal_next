@@ -17,6 +17,15 @@ CREATE TABLE IF NOT EXISTS news_articles (
 );
 CREATE INDEX IF NOT EXISTS news_published_idx ON news_articles (published_at);
 
+CREATE TABLE IF NOT EXISTS macro_events (
+  id SERIAL PRIMARY KEY,
+  name TEXT NOT NULL,
+  impact TEXT NOT NULL,
+  at TIMESTAMPTZ NOT NULL,
+  UNIQUE (name, at)
+);
+CREATE INDEX IF NOT EXISTS macro_events_at_idx ON macro_events (at);
+
 CREATE TABLE IF NOT EXISTS briefings (
   hash TEXT PRIMARY KEY,
   script TEXT NOT NULL,
@@ -52,6 +61,8 @@ CREATE TABLE IF NOT EXISTS trades (
   created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
   UNIQUE (entry_time, strategy, entry_price)
 );
+
+ALTER TABLE trades ADD COLUMN IF NOT EXISTS news_context JSONB;
 `;
 
 type Runner = (text: string, params?: unknown[]) => Promise<{ rows: any[] }>;

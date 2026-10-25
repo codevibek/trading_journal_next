@@ -18,8 +18,18 @@ export type Trade = {
   imageUrl: string | null;
   imageRef: string | null;
   features: Features | null;
+  newsContext: NewsContext | null;
 };
 
+export type NewsContext = {
+  checkedAt: string;
+  sources: string[];
+  count: number;
+  highCount: number;
+  sentiment: number | null;
+  macro: { name: string; impact: string; minutes: number } | null;
+  macroChecked: boolean;
+};
 export type Features = {
   entryInRange: boolean;
   session: string;

@@ -21,10 +21,20 @@ const KEYWORDS: Record<string, number> = {
 
 const CRYPTO_RE = /\b(bitcoin|btc|crypto|cryptocurrency|ethereum|stablecoin|blockchain|coinbase|binance|etf)\b/i;
 
+const MARKET_TONE: [RegExp, number][] = [
+  [/\b(rall(y|ies|ied)|surg(e|es|ed|ing)|soar(s|ed|ing)?|jump(s|ed)?|climb(s|ed)?|gain(s|ed)?|rebound(s|ed)?|recover(s|ed|y)?|bull(ish)?|breakout|all-time high|record high|inflows?|beats? estimates|upgrade[sd]?|approv(al|ed|es)|adoption|cools?|eases?)\b/g, 0.35],
+  [/\b(plung(e|es|ed|ing)|slid(e|es|ing)|slump(s|ed)?|tumbl(e|es|ed)|drop(s|ped)?|fall(s|ing)?|fell|crash(es|ed)?|sell-?off|outflows?|hack(s|ed)?|exploit(s|ed)?|liquidat(ion|ions|ed)|bear(ish)?|downgrade[sd]?|lawsuit|ban(s|ned)?|fraud|miss(es|ed)? estimates|record low|fears?|recession|default)\b/g, -0.35],
+];
+
+function marketTone(text: string) {
+  let tone = 0;
+  for (const [re, weight] of MARKET_TONE) tone += (text.match(re)?.length ?? 0) * weight;
+  return Math.max(-1, Math.min(1, tone));
+}
 export function scoreImpact(title: string, summary: string) {
   const text = `${title}. ${summary}`.trim();
-  const compound: number = vader.SentimentIntensityAnalyzer.polarity_scores(text).compound;
-  const sentiment = compound >= 0.15 ? "Positive" : compound <= -0.15 ? "Negative" : "Neutral";
+  const vaderScore: number = vader.SentimentIntensityAnalyzer.polarity_scores(text).compound;
+  const compound = Math.max(-1, Math.min(1, vaderScore + marketTone(text.toLowerCase())));  const sentiment = compound >= 0.15 ? "Positive" : compound <= -0.15 ? "Negative" : "Neutral";
 
   const lower = text.toLowerCase();
   const weights = Object.entries(KEYWORDS)

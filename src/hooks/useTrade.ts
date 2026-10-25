@@ -36,6 +36,7 @@ const toDraft = (t: Trade): TradeDraft => ({
 export function useTrade(id?: number) {
   const [trade, setTrade] = useState<Trade | null>(null);
   const [news, setNews] = useState<any[]>([]);
+  const [events, setEvents] = useState<any[]>([])
   const [draft, setDraft] = useState<TradeDraft>(emptyDraft);
   const [image, setImage] = useState<File | null>(null);
   const [imageVersion, setImageVersion] = useState(0);
@@ -49,6 +50,7 @@ export function useTrade(id?: number) {
         .then((data) => {
           setTrade(data.trade);
           setNews(data.news);
+          setEvents(data.events ?? []);
           setDraft(toDraft(data.trade));
         })
         .catch((e) => setError(e.message))
@@ -95,5 +97,5 @@ export function useTrade(id?: number) {
 
   const imageSrc = trade?.hasImage ? `/api/trades/${id}/image?v=${imageVersion}` : trade?.imageUrl || null;
 
-  return { trade, news, draft, update, image, setImage, imageSrc, loading, saving, error, save, remove, removeImage };
+  return { trade, news, events, draft, update, image, setImage, imageSrc, loading, saving, error, save, remove, removeImage };
 }

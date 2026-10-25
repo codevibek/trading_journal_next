@@ -1,5 +1,6 @@
 import type { Article } from "@/hooks/useNews";
 import { timeAgo } from "@/lib/format";
+import { relativeToEntry } from "@/lib/format";
 
 const LEVEL = {
   High: "bg-loss-soft text-loss",
@@ -8,7 +9,7 @@ const LEVEL = {
 };
 const SENTIMENT = { Positive: "text-win", Negative: "text-loss", Neutral: "text-muted" };
 
-export default function NewsList({ articles, compact = false }: { articles: Article[]; compact?: boolean }) {
+export default function NewsList({ articles, compact = false,entryTime }: { articles: Article[]; compact?: boolean, entryTime?: string }) {
   return (
     <ul className="card divide-y divide-line overflow-hidden">
       {articles.map((a) => (
@@ -23,7 +24,7 @@ export default function NewsList({ articles, compact = false }: { articles: Arti
               <p className="mt-1.5 text-xs text-muted">
                 {a.impactLevel} impact <span className="px-1">•</span>
                 <span className={SENTIMENT[a.sentiment]}>{a.sentiment}</span> <span className="px-1">•</span>
-                {a.source.replace(/_/g, " ")}, {timeAgo(a.publishedAt)}
+                {a.source.replace(/_/g, " ")}, {entryTime ? relativeToEntry(a.publishedAt, entryTime) : timeAgo(a.publishedAt)}
               </p>
             </div>
           </a>

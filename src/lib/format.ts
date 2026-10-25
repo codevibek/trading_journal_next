@@ -23,3 +23,10 @@ export function dateTime(date: string | Date) {
     minute: "2-digit",
   });
 }
+export function relativeToEntry(when: string | Date, entry: string | Date) {
+  const mins = Math.round((new Date(when).getTime() - new Date(entry).getTime()) / 60000);
+  if (mins === 0) return "at entry";
+  const abs = Math.abs(mins);
+  const text = abs < 60 ? `${abs}m` : `${Math.floor(abs / 60)}h${abs % 60 ? ` ${abs % 60}m` : ""}`;
+  return `${text} ${mins < 0 ? "before" : "after"} entry`;
+}

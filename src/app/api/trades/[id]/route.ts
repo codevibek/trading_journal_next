@@ -1,10 +1,9 @@
 import { deleteTrade, getTrade, newsBefore, updateTrade, validate } from "@/lib/trades";
-
+import { macroNear } from "@/lib/history";
 export async function GET(_req: Request, ctx: RouteContext<"/api/trades/[id]">) {
   const trade = await getTrade(Number((await ctx.params).id));
   if (!trade) return Response.json({ error: "Trade not found." }, { status: 404 });
-  return Response.json({ trade, news: await newsBefore(trade.entryTime) });
-}
+  return Response.json({ trade, news: await newsBefore(trade.entryTime), events: await macroNear(trade.entryTime) });}
 
 export async function PATCH(request: Request, ctx: RouteContext<"/api/trades/[id]">) {
   const { errors, value } = validate(await request.json());
