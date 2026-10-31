@@ -24,7 +24,13 @@ export type CompanyNews = {
   url: string;
   publishedAt: string;
   reaction: Reaction | null;
+  tier: Tier | null;
+  tierBasis: string | null;
+  tierValue: number | null;
 };
+
+export const TIERS = ["Blue chip", "Mid cap", "Small cap"] as const;
+export type Tier = (typeof TIERS)[number];
 
 const STALE_MS = 20 * 60 * 1000;
 
@@ -34,6 +40,7 @@ export function useExchangeNews(market: "asx" | "us") {
   const [all, setAll] = useState(false);
   const [filter, setFilter] = useState<"all" | "confirmed" | "high">("all");
   const [search, setSearch] = useState("");
+  const [size, setSize] = useState<Tier | "all">("all");
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [error, setError] = useState("");
@@ -92,12 +99,16 @@ export function useExchangeNews(market: "asx" | "us") {
   const q = search.trim().toLowerCase();
   const visible = items.filter(
     (i) =>
+      (size === "all" || i.tier === size) &&
       (filter === "all" || (filter === "high" ? i.impact === "High" : i.reaction?.status === "confirmed")) &&
       (!q || `${i.ticker} ${i.company ?? ""} ${i.title}`.toLowerCase().includes(q)),
   );
 
+  const groups = [...TIERS, null].map((tier) => ({ tier, items: visible.filter((i) => (i.tier ?? null) === tier) })).filter((g) => g.items.length);
+
   return {
     items: visible,
+    groups,
     total: items.length,
     confirmed: items.filter((i) => i.reaction?.status === "confirmed").length,
     high: items.filter((i) => i.impact === "High").length,
@@ -106,7 +117,7 @@ export function useExchangeNews(market: "asx" | "us") {
     refreshing,
     error,
     refresh,
-    filters: { all, setAll, filter, setFilter, search, setSearch },
+    filters: { all, setAll, filter, setFilter, search, setSearch, size, setSize },
     briefing: { audioUrl, script, recording, listen },
   };
 }

@@ -82,6 +82,15 @@ CREATE TABLE IF NOT EXISTS company_news (
   UNIQUE (market, uid)
 );
 CREATE INDEX IF NOT EXISTS company_news_idx ON company_news (market, published_at);
+CREATE TABLE IF NOT EXISTS stock_tiers (
+  market TEXT NOT NULL,
+  ticker TEXT NOT NULL,
+  tier TEXT NOT NULL,
+  basis TEXT NOT NULL,
+  value DOUBLE PRECISION,
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+  PRIMARY KEY (market, ticker)
+);
 `;
 
 type Runner = (text: string, params?: unknown[]) => Promise<{ rows: any[] }>;
