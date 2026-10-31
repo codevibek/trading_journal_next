@@ -43,6 +43,8 @@ export type Features = {
   signalCandle: "green" | "red";
   newsHighBefore: number | null;
   newsSentimentBefore: number | null;
+  signalRangeAtr?: number;
+  signalBodyAtr?: number;
 };
 
 export const hasFeatures = (t: Trade) => !!t.features && "rsi15" in t.features;

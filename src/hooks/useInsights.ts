@@ -146,6 +146,23 @@ function newsDimensions(trades: Trade[]): Dimension[] {
     },
   ];
 }
+const LONG_CANDLE = 1.5;
+const CANDLE_SIZES = [
+  "Small (under 0.8×)",
+  "Normal (0.8–1.5×)",
+  "Long (1.5–2.5×)",
+  "Very long (2.5×+)",
+];
+const candleSize = (f: Features) =>
+  f.signalRangeAtr == null
+    ? null
+    : f.signalRangeAtr < 0.8
+      ? CANDLE_SIZES[0]
+      : f.signalRangeAtr < LONG_CANDLE
+        ? CANDLE_SIZES[1]
+        : f.signalRangeAtr < 2.5
+          ? CANDLE_SIZES[2]
+          : CANDLE_SIZES[3];
 const tercile = (values: number[]) => {
   const s = [...values].sort((a, b) => a - b);
   return [s[Math.floor(s.length / 3)], s[Math.floor((2 * s.length) / 3)]];
@@ -338,6 +355,25 @@ export function useInsights() {
           "Sat",
           "Sun",
         ]),
+      },
+      {
+        title: "Signal candle size",
+        hint: "High-to-low range of the candle before entry, compared with the normal range (ATR)",
+        buckets: groupBy(ready, (_, f) => candleSize(f), CANDLE_SIZES),
+      },
+      {
+        title: "After a long candle",
+        hint: "Only trades where the candle before entry was 1.5× ATR or more",
+        buckets: groupBy(
+          ready,
+          (t, f) =>
+            f.signalRangeAtr == null || f.signalRangeAtr < LONG_CANDLE
+              ? null
+              : (t.side === "long") === (f.signalCandle === "green")
+                ? "Traded in its direction"
+                : "Traded against it",
+          ["Traded in its direction", "Traded against it"],
+        ),
       },
     ];
     if (strategy === "All" && strategies.length > 1) {

@@ -11,13 +11,18 @@ const LINKS: { href: string; label: string; icon: IconName }[] = [
   { href: "/journal", label: "Journal", icon: "journal" },
   { href: "/insights", label: "Insights", icon: "insights" },
   { href: "/import", label: "Import", icon: "import" },
+  { href: "/asx", label: "ASX news", icon: "news" },
+  { href: "/us", label: "US news", icon: "news" },
 ];
 
 export default function Nav() {
   const path = usePathname();
   if (path === "/login") return null;
-  const active = (href: string) => (href === "/" ? path === "/" : path.startsWith(href) && path !== "/journal/new");
-  const tabs = [LINKS[0], LINKS[1], null, LINKS[3], LINKS[4]];
+  const active = (href: string) =>
+    href === "/"
+      ? path === "/"
+      : path.startsWith(href) && path !== "/journal/new";
+  const tabs = [LINKS[0], LINKS[1], null, LINKS[5], LINKS[6]];
 
   return (
     <>
@@ -57,7 +62,12 @@ export default function Nav() {
                 {l.label}
               </Link>
             ) : (
-              <Link key="log" href="/journal/new" aria-label="Log a trade" className="flex justify-center pb-2">
+              <Link
+                key="log"
+                href="/journal/new"
+                aria-label="Log a trade"
+                className="flex justify-center pb-2"
+              >
                 <span className="-mt-5 flex h-13 w-13 items-center justify-center rounded-2xl bg-brand-strong text-white shadow-lg shadow-brand/30">
                   <Icon name="plus" className="h-6 w-6" />
                 </span>

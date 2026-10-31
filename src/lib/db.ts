@@ -63,6 +63,25 @@ CREATE TABLE IF NOT EXISTS trades (
 );
 
 ALTER TABLE trades ADD COLUMN IF NOT EXISTS news_context JSONB;
+CREATE TABLE IF NOT EXISTS company_news (
+  id SERIAL PRIMARY KEY,
+  market TEXT NOT NULL,
+  uid TEXT NOT NULL,
+  ticker TEXT NOT NULL,
+  company TEXT,
+  title TEXT NOT NULL,
+  category TEXT,
+  impact TEXT NOT NULL,
+  impact_score INT NOT NULL,
+  price_sensitive BOOLEAN NOT NULL DEFAULT false,
+  sentiment TEXT,
+  url TEXT,
+  published_at TIMESTAMPTZ NOT NULL,
+  reaction JSONB,
+  checked_at TIMESTAMPTZ,
+  UNIQUE (market, uid)
+);
+CREATE INDEX IF NOT EXISTS company_news_idx ON company_news (market, published_at);
 `;
 
 type Runner = (text: string, params?: unknown[]) => Promise<{ rows: any[] }>;
@@ -73,11 +92,15 @@ export const isConfigured = () => !!process.env.DATABASE_URL;
 
 async function connect(): Promise<Runner> {
   const url = process.env.DATABASE_URL;
-  if (!url) throw new Error("DATABASE_URL is not set. Add it to .env.local (see the setup screen).");
+  if (!url)
+    throw new Error(
+      "DATABASE_URL is not set. Add it to .env.local (see the setup screen).",
+    );
   const local = /@(localhost|127\.0\.0\.1)[:/]/.test(url);
   const pool = new Pool({
     connectionString: url,
-    ssl: local || /sslmode=/.test(url) ? undefined : { rejectUnauthorized: false },
+    ssl:
+      local || /sslmode=/.test(url) ? undefined : { rejectUnauthorized: false },
     max: 3,
   });
   const run: Runner = (text, params) => pool.query(text, params as any[]);
